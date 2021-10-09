@@ -179,7 +179,7 @@ export default {
             this.activity = true;
             this.hourGlassLabel = 'Sending...';
 
-            revision({
+            revision(this.signedUrl, {
                 filename: this.currentFilename,
                 revised_html: this.currentContent,
                 original_html: this.originalContents,
@@ -217,9 +217,9 @@ export default {
                 zipname: this.filename.replace(/\.html/, '.zip'),
             };
 
-            download(blob, this.download.zipname);
-
             setTimeout(() => {
+                download(blob, this.download.zipname);
+
                 this.active = 2;
                 this.activity = false;
             }, 1000);

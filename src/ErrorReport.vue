@@ -6,9 +6,18 @@
 </template>
 
 <script>
+import axios from 'axios';
 import Bugsnag from '@bugsnag/js';
 import BugsnagPluginVue from '@bugsnag/plugin-vue';
+import { AxiosDefaults } from 'capsule-common';
+import Vue from 'vue';
 import router from './router';
+
+Vue.use(AxiosDefaults, {
+    axios,
+    id: 'capsule-browser-extension',
+    version: VERSION,
+});
 
 Bugsnag.start({
     apiKey: process.env.VUE_APP_BUGSNAG_SECRET,
