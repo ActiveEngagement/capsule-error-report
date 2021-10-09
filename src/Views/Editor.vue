@@ -179,18 +179,20 @@ export default {
             this.activity = true;
             this.hourGlassLabel = 'Sending...';
 
-            revision(this.signedUrl, {
-                filename: this.currentFilename,
-                revised_html: this.currentContent,
-                original_html: this.originalContents,
-            }, this.httpRequestOptions).then(() => {
-                this.active = 1;
-                this.error = null;
-                this.activity = false;
-            }, e => {
-                this.error = e;
-                this.activity = false;
-            });
+            setTimeout(() => {
+                revision(this.signedUrl, {
+                    filename: this.currentFilename,
+                    revised_html: this.currentContent,
+                    original_html: this.originalContents,
+                }, this.httpRequestOptions).then(() => {
+                    this.active = 1;
+                    this.error = null;
+                    this.activity = false;
+                }, e => {
+                    this.error = e;
+                    this.activity = false;
+                });
+            }, 750);
         },
 
         onClickCancel(close) {
