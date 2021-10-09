@@ -1,5 +1,3 @@
-var ManifestPlugin = require('webpack-manifest-plugin');
-
 // vue.config.js
 module.exports = {
     configureWebpack: {
@@ -12,9 +10,6 @@ module.exports = {
         output: {
             libraryExport: 'default'
         },
-        plugins:[
-            // new ManifestPlugin()
-        ],
     },
     pages: {
         index: {

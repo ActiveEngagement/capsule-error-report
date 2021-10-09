@@ -15,8 +15,8 @@
 
                     <ul class="mt-3">
                         <template v-for="errors in error.response.data.errors">
-                            <li v-for="(error, i) in errors" :key="i">
-                                <h5>{{ error }}</h5>
+                            <li v-for="(row, i) in errors" :key="i">
+                                <h5>{{ row }}</h5>
                             </li>
                         </template>
                     </ul>
@@ -28,24 +28,12 @@
 </template>
 
 <script>
-import Alert from 'vue-interface/src/Components/Alert';
+import { Alert } from '@vue-interface/alert';
 import { faBomb } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon as Icon } from '@fortawesome/vue-fontawesome';
 
 library.add(faBomb);
-
-/*
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
-import { faDownload } from '@fortawesome/free-solid-svg-icons/faDownload';
-import { faMailBulk } from '@fortawesome/free-solid-svg-icons/faMailBulk';
-import { faClipboardCheck } from '@fortawesome/free-solid-svg-icons/faClipboardCheck';
-
-library.add(faEnvelope);
-library.add(faDownload);
-library.add(faMailBulk);
-library.add(faClipboardCheck);
-*/
 
 export default {
     

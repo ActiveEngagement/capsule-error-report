@@ -21,7 +21,7 @@ export default new Router({
         },{
             path: '/fix',
             name: 'fix',
-            component: () => import(/* webpackChunkName: 'editor' */'./Components/Editor.vue')
+            component: () => import(/* webpackChunkName: 'editor' */'./Views/Editor.vue')
         }
     ]
 });

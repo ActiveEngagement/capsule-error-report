@@ -5,7 +5,7 @@
                 <slide-deck :active="active">
                     <div :key="0">
                         <div class="text-center text-primary mt-4 mb-4">
-                            <icon :icon="['far', 'life-ring']" size="5x" />
+                            <font-awesome-icon :icon="['far', 'life-ring']" size="5x" />
                         </div>
 
                         <div class="px-1">
@@ -29,14 +29,14 @@
                         </btn-activity>
                         
                         <div class="text-center mt-2">
-                            <small><router-link :to="{name: 'home'}"><icon icon="long-arrow-alt-left" /> Back to Report</router-link></small>
+                            <small><router-link :to="{name: 'home'}"><font-awesome-icon icon="long-arrow-alt-left" /> Back to Report</router-link></small>
                         </div>
                     </div>
                     <div :key="1">
                         <card>
                             <card-body>
                                 <div class="text-center text-primary mt-4 mb-4">
-                                    <icon :icon="['far', 'check-circle']" size="5x" />
+                                    <font-awesome-icon :icon="['far', 'check-circle']" size="5x" />
                                 </div>
 
                                 <h1 class="text-center font-weight-light mb-4">
@@ -49,7 +49,7 @@
                             </card-body>
                         </card>
                         <div class="text-center mt-2">
-                            <small><router-link :to="{name: 'home'}"><icon icon="long-arrow-alt-left" /> Back to Report</router-link></small>
+                            <small><router-link :to="{name: 'home'}"><font-awesome-icon icon="long-arrow-alt-left" /> Back to Report</router-link></small>
                         </div>
                     </div>
                     <div :key="2">
@@ -65,36 +65,31 @@
 import axios from 'axios';
 import Notepad from 'vue-notepad';
 import HttpException from './HttpException';
-import Card from 'vue-interface/src/Components/Card';
-import SlideDeck from 'vue-interface/src/Components/SlideDeck';
-import AnimateCss from 'vue-interface/src/Components/AnimateCss';
-import InputField from 'vue-interface/src/Components/InputField';
-import CardBody from 'vue-interface/src/Components/Card/CardBody';
-import BtnActivity from 'vue-interface/src/Components/BtnActivity';
+import { Card, CardBody } from '@vue-interface/card';
+import { SlideDeck } from '@vue-interface/slide-deck';
+import AnimateCss from '@vue-interface/animate-css';
+import InputField from '@vue-interface/input-field';
+import BtnActivity from '@vue-interface/btn-activity';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon as Icon } from '@fortawesome/vue-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faLifeRing, faCheckCircle } from '@fortawesome/free-regular-svg-icons';
 import { faComment, faExclamationTriangle, faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faComment);
-library.add(faLifeRing);
-library.add(faCheckCircle);
-library.add(faLongArrowAltLeft);
-library.add(faExclamationTriangle);
+library.add(faCheckCircle, faComment, faExclamationTriangle, faLifeRing, faLongArrowAltLeft);
 
 export default {
 
     components: {
-        Icon,
+        AnimateCss,
+        BtnActivity,
         Card,
         CardBody,
+        FontAwesomeIcon,
+        HttpException,
+        InputField,
         Notepad,
         SlideDeck,
-        AnimateCss,
-        InputField,
-        BtnActivity,
-        HttpException
     },
 
     data() {

@@ -3,12 +3,9 @@
         ref="editor"
         v-model="editor"
         demo-mode
-        :team="team"
-        :errors="lint.errors"
-        :filename="lint.filename"
-        :api-key="apiKey"
-        :contents="lint.html"
-        :environment="environment"
+        :errors="errors"
+        :filename="filename"
+        :contents="html"
         @lint-errors="onLintError"
         @lint-success="onLintSuccess"
         @close="$router.push({name: 'home'})">
@@ -98,13 +95,12 @@
 </template>
 
 <script>
-import { throttle } from 'lodash';
+import AnimateCss from '@vue-interface/animate-css';
+import Btn from '@vue-interface/btn';
+import { SlideDeck } from '@vue-interface/slide-deck';
 import Hourglass from 'vue-hourglass';
-import HttpException from './HttpException';
-import Btn from 'vue-interface/src/Components/Btn';
+import HttpException from '../Components/HttpException';
 import { download, revision, zip } from '@/Helpers/Functions';
-import SlideDeck from 'vue-interface/src/Components/SlideDeck';
-import AnimateCss from 'vue-interface/src/Components/AnimateCss';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon as Icon } from '@fortawesome/vue-fontawesome';
@@ -118,10 +114,6 @@ library.add(faCheckCircle);
 library.add(faFileArchive);
 library.add(faTimesCircle);
 library.add(faWindowClose);
-
-const throttled = throttle(fn => {
-    fn && fn();
-}, 2500);
 
 export default {
     
@@ -138,30 +130,19 @@ export default {
     },
 
     props: {
-        
-        lint: {
-            type: Object,
-            required: true
-        },
-
-        team: {
-            type: [Number, Object],
-            required: true
-        },
 
         errors: Array,
 
-        apiKey: {
+        filename: {
             type: String,
             required: true
         },
 
-        environment: {
+        signedUrl: {
             type: String,
-            default() {
-                return process.env.NODE_ENV;
-            }
+            required: true
         }
+
     },
 
     data() {
@@ -182,10 +163,10 @@ export default {
             hourGlassLabel: null,
             originalErrors: this.errors,
             currentErrors: errors.slice(0),
-            currentFilename: this.lint.filename,
-            originalFilename: this.lint.filename,
-            currentContents: this.lint.html || this.getSlotContents(),
-            originalContents: this.lint.html || this.getSlotContents()
+            currentFilename: this.filename,
+            originalFilename: this.filename,
+            currentContents: this.html || this.getSlotContents(),
+            originalContents: this.html || this.getSlotContents()
         };
     },
 
@@ -194,9 +175,6 @@ export default {
         httpRequestOptions() {
             return {
                 baseURL: `http://api.thecapsule.${this.environment === 'production' ? 'email' : 'test'}/v1`,
-                headers: {
-                    Authorization: `Bearer ${this.apiKey}`
-                }
             };
         }
         
@@ -211,20 +189,6 @@ export default {
         }
     },
 
-    mounted() {
-        /*
-        this.$nextTick(() => {
-            const { line, ch, code } = this.$route.query;
-
-            this.$refs.editor.$refs.field.cm.state.lint.errors.forEach(error => {
-                if(error.code === code && error.line === line && error.ch === ch) {
-                    error.focus();
-                }
-            });
-        });
-        */
-    },
-
     methods: {
 
         formatBytes(bytes) {
@@ -235,28 +199,21 @@ export default {
         },
 
         onClickSend() {
-            throttled(() => {
-                this.error = null;
-                this.activity = true;
-                this.hourGlassLabel = 'Sending...';
+            this.error = null;
+            this.activity = true;
+            this.hourGlassLabel = 'Sending...';
 
-                revision({
-                    filename: this.currentFilename,
-                    revised_html: this.currentContents,
-                    original_html: this.originalContents,
-                    team_id: typeof this.team === 'object' ? this.team.id : this.team
-                }, this.httpRequestOptions).then(response => {
-                    throttled(() => {
-                        this.active = 1;
-                        this.error = null;
-                        this.activity = false;
-                    });
-                }, e => {
-                    throttled(() => {
-                        this.error = e;
-                        this.activity = false;
-                    });
-                });
+            revision({
+                filename: this.currentFilename,
+                revised_html: this.currentContents,
+                original_html: this.originalContents,
+            }, this.httpRequestOptions).then(response => {
+                this.active = 1;
+                this.error = null;
+                this.activity = false;
+            }, e => {
+                this.error = e;
+                this.activity = false;
             });
         },
 

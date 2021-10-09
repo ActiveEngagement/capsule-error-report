@@ -11,22 +11,24 @@
                         </div>
                     </template>
                     
+                    <p>We found some errors in <strong>{{ filename }}</strong>. The following errors need to be fixed before we can send your email:</p>
+                    
                     <br>
-                    <h5>{{ lint.created_at | date('MM/DD/YYYY hh:mm A') }}</h5>
-                    <br>
-                    <p>We found some errors in <strong>document.html</strong>. The following errors need to be fixed before we can send your email:</p>
-                    <br>
+                    
                     <ol>
-                        <li v-for="(error, i) in lint.errors" :key="i">
-                            <router-link :to="{name: 'fix', query: { line: error.line - 1, ch: error.column - 1, code: error.code }}" v-html="format(error)" />
+                        <li v-for="(error, i) in errors" :key="i">
+                            <router-link :to="{name: 'fix'}" v-html="format(error)" />
                         </li>
                     </ol>
+                    
                     <br>
+
                     <h5 class="font-weight-bold">
                         Additional Resources
                     </h5>
+
                     <ol>
-                        <li><a href="http://thecapsule.email/docs/error-codes">Error Code Glossary</a></li>
+                        <li><a href="http://thecapsule.email/docs/codes">Error Code Glossary</a></li>
                         <li>
                             <router-link :to="{name: 'contact'}">
                                 Contact Support
@@ -39,7 +41,7 @@
             <animate-css name="fade" delay=".85s">
                 <div v-if="mounted" class="m-4 text-center">
                     <btn :to="{name: 'fix'}" size="xl">
-                        <icon icon="tools" /> Fix Errors
+                        <font-awesome-icon icon="tools" /> Fix Errors
                     </btn>
                 </div>
             </animate-css>
@@ -48,41 +50,25 @@
 </template>
 
 <script>
-import axios from 'axios';
+import Btn from '@vue-interface/btn';
+import AnimateCss from '@vue-interface/animate-css';
+import date from '@vue-interface/date-filter';
+import { lint } from 'capsule-lint';
 import Notepad from 'vue-notepad';
-import { download } from '@/Helpers/Functions';
-import Btn from 'vue-interface/src/Components/Btn';
-import AnimateCss from 'vue-interface/src/Components/AnimateCss';
-import { DateFilter as date } from 'vue-interface/src/Filters/Date';
-
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faTools } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon as Icon } from '@fortawesome/vue-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 library.add(faTools);
 
-/*
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
-import { faDownload } from '@fortawesome/free-solid-svg-icons/faDownload';
-import { faMailBulk } from '@fortawesome/free-solid-svg-icons/faMailBulk';
-import { faClipboardCheck } from '@fortawesome/free-solid-svg-icons/faClipboardCheck';
-
-library.add(faEnvelope);
-library.add(faDownload);
-library.add(faMailBulk);
-library.add(faClipboardCheck);
-*/
-
 export default {
     
-    name: 'BugReport',
-
     components: {
+        AnimateCss,
         Btn,
-        Icon,
+        FontAwesomeIcon,
         Notepad,
-        AnimateCss
     },
 
     filters: {
@@ -91,18 +77,18 @@ export default {
 
     props: {
 
-        apiKey: {
+        content: {
             type: String,
             required: true
         },
 
-        lint: {
-            type: Object,
+        filename: {
+            type: String,
             required: true
         },
 
-        team: {
-            type: [Number, Object],
+        signedUrl: {
+            type: String,
             required: true
         }
         
@@ -110,22 +96,33 @@ export default {
 
     data() {
         return {
+            errors: null,
             mounted: false
         };
     },
 
     mounted() {
+        this.errors = lint(this.content);
         this.mounted = true;
     },
 
     methods: {
 
+        escapeHtml(unsafe) {
+            return unsafe
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        },
+
         format(error) {
-            return `Line ${error.line},${error.column} :: ${error.code} ${error.msg} (${error.rule})`;
+            return `${error.line},${error.col} :: (${error.rule.id}) ${this.escapeHtml(error.message)}`;
         }
 
     }
-    
+
 };
 </script>
 
