@@ -44,21 +44,21 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/ 	// object to store loaded CSS chunks
 /******/ 	var installedCssChunks = {
-/******/ 		3: 0
+/******/ 		2: 0
 /******/ 	}
 /******/
 /******/ 	// object to store loaded and loading chunks
 /******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 	// Promise = chunk loading, 0 = chunk loaded
 /******/ 	var installedChunks = {
-/******/ 		3: 0
+/******/ 		2: 0
 /******/ 	};
 /******/
 /******/
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "CapsuleErrorReport.umd." + ({"0":"vendors~bug-report~contact-form~editor~home","1":"vendors~bug-report~contact-form~editor","2":"vendors~contact-form~editor","4":"bug-report","5":"capsule-editor","6":"contact-form","7":"editor","8":"home","9":"vendors~bug-report","10":"vendors~capsule-editor","11":"vendors~contact-form","12":"vendors~editor"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "CapsuleErrorReport.umd." + ({"0":"vendors~bug-report~contact-form~editor","1":"vendors~contact-form~editor","3":"bug-report","4":"capsule-editor","5":"contact-form","6":"editor","7":"home","8":"vendors~capsule-editor","9":"vendors~editor"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -92,11 +92,11 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"0":1,"2":1,"4":1,"5":1,"6":1,"7":1,"9":1,"10":1,"11":1,"12":1};
+/******/ 		var cssChunks = {"1":1,"3":1,"4":1,"5":1,"6":1,"8":1,"9":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "src/assets/css/" + ({"0":"vendors~bug-report~contact-form~editor~home","1":"vendors~bug-report~contact-form~editor","2":"vendors~contact-form~editor","4":"bug-report","5":"capsule-editor","6":"contact-form","7":"editor","8":"home","9":"vendors~bug-report","10":"vendors~capsule-editor","11":"vendors~contact-form","12":"vendors~editor"}[chunkId]||chunkId) + "." + {"0":"71a233fb","1":"31d6cfe0","2":"1b38a245","4":"04300af9","5":"1e56a21d","6":"5153f1f4","7":"5820e29a","8":"31d6cfe0","9":"5a91a53d","10":"9ab0db79","11":"5a91a53d","12":"25af1a18","13":"31d6cfe0"}[chunkId] + ".css";
+/******/ 				var href = "src/assets/css/" + ({"0":"vendors~bug-report~contact-form~editor","1":"vendors~contact-form~editor","3":"bug-report","4":"capsule-editor","5":"contact-form","6":"editor","7":"home","8":"vendors~capsule-editor","9":"vendors~editor"}[chunkId]||chunkId) + "." + {"0":"31d6cfe0","1":"1b38a245","3":"04300af9","4":"1e56a21d","5":"5153f1f4","6":"5820e29a","7":"31d6cfe0","8":"9ab0db79","9":"25af1a18","10":"31d6cfe0"}[chunkId] + ".css";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
@@ -3694,7 +3694,7 @@ return _$notifier_2;
 
 "use strict";
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"35d0dc38-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/@vue-interface/btn-activity/src/BtnActivity.vue?vue&type=template&id=798990cc&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"54068579-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/@vue-interface/btn-activity/src/BtnActivity.vue?vue&type=template&id=798990cc&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{staticClass:"btn",class:_vm.classes,attrs:{"type":_vm.type},on:{"click":_vm.onClick}},[(_vm.icon)?_c('i',{class:_vm.icon}):_vm._e(),_vm._v(" "+_vm._s(_vm.label)+" "),_vm._t("default"),_c('activity-indicator',_vm._b({},'activity-indicator',_vm.indicatorProps,false))],2)}
 var staticRenderFns = []
 
@@ -3710,7 +3710,7 @@ var registry = __webpack_require__("1dc8");
 // EXTERNAL MODULE: ./node_modules/@vue-interface/activity-indicator/src/ActivityIndicator.vue + 4 modules
 var ActivityIndicator = __webpack_require__("e203");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"35d0dc38-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/@vue-interface/activity-indicator/src/types/Dots.vue?vue&type=template&id=2f7354e6&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"54068579-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/@vue-interface/activity-indicator/src/types/Dots.vue?vue&type=template&id=2f7354e6&
 var Dotsvue_type_template_id_2f7354e6_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
 var Dotsvue_type_template_id_2f7354e6_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"activity-indicator-dots"},[_c('div',{staticClass:"activity-indicator-dots-bounce1"}),_c('div',{staticClass:"activity-indicator-dots-bounce2"}),_c('div',{staticClass:"activity-indicator-dots-bounce3"})])}]
 
@@ -14564,6 +14564,13 @@ PouchDB.plugin(IDBPouch)
 
 /***/ }),
 
+/***/ "16fe":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "src/assets/img/capsule-bug-report.1f2d466d.png";
+
+/***/ }),
+
 /***/ "1c35":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16573,6 +16580,116 @@ function fromByteArray (uint8) {
 
 /***/ }),
 
+/***/ "210c":
+/***/ (function(module, exports, __webpack_require__) {
+
+const EventTree = __webpack_require__("3eff");
+
+module.exports = {
+    id: 'html-valid-content-model',
+    description: 'Validates document content for proper structure, but also allows for document fragments.',
+    init(parser, reporter, options) {
+        new EventTree(parser, root => {
+            const html = root.findFirst('html');
+
+            // Enforce strict document model
+            if(html) {
+                // Throw error on all elements on the same level as the main <html> tag.
+                if(!html.isFirst()) {
+                    root.children.filter(child => child.tagName !== 'html')
+                        .forEach(child => {
+                            const { line, col, raw } = child;
+
+                            const message = `The [ ${child.tagName} ] cannot come ${child.isBefore(html) ? 'before' : 'after'} the html tag on line ${html.line}.`;
+
+                            reporter.error(message, line, col, this, raw);
+                        });
+                }
+
+                // Throw error for any duplicate html tag.
+                root.find('html')
+                    .filter(subject => subject !== html)
+                    .forEach(child => {
+                        const { line, col, raw } = child;
+
+                        const message = `Only one [ ${child.tagName} ] tag allowed per document.`;
+
+                        reporter.error(message, line, col, this, raw);
+                    });
+                
+                // Check to ensure only body and head tags are children of the html tag.
+                html.children.forEach(child => {
+                    if(!child.match('head', 'body')) {                        
+                        const { line, col, raw } = child;
+
+                        const message = `The [ ${child.tagName} ] tag is not allowed inside the html tag.`;
+
+                        reporter.error(message, line, col, this, raw);
+                    }
+                });
+            }
+                
+            // Check to ensure only head and children exist as children for html.
+            root.find('head', 'body')
+                .filter(child => {
+                    return !html || !child.isChildOf(html);
+                })
+                .forEach(child => {       
+                    const { line, col, raw } = child;
+
+                    const message = `The [ ${child.tagName} ] tag must be a child to the html tag.`;
+
+                    reporter.error(message, line, col, this, raw);
+                });
+
+            // Check for duplicate children inside the html tag
+            const htmlChildren = root.find('head', 'body').filter(child => {
+                return !html || child.isChildOf(html);
+            });
+
+            const bodyTags = htmlChildren.filter(child => child.tagName === 'body');
+            const headTags = htmlChildren.filter(child => child.tagName === 'head');
+
+            // Ensure the head and body are in the correct order.
+            if(bodyTags[0] && headTags[0] && bodyTags[0].isBefore(headTags[0])) {
+                const { line, col, raw } = bodyTags[0];
+
+                const message = `The [ ${bodyTags[0].tagName} ] tag must come after the head tag on line ${headTags[0].line}.`;
+
+                reporter.warn(message, line, col, this, raw);
+            }
+                
+            if(bodyTags[0] && headTags[0] && headTags[0].isAfter(bodyTags[0])) {
+                const { line, col, raw } = bodyTags[0];
+
+                const message = `The [ ${headTags[0].tagName} ] tag must come before the body tag on line ${bodyTags[0].line}.`;
+
+                reporter.warn(message, line, col, this, raw);
+            }
+
+            // Check for the remaining duplicates
+            bodyTags.splice(1).concat(headTags.splice(1))
+                .filter(child => html && child.isChildOf(html))
+                .forEach(child => {
+                    const { line, col, raw } = child;
+
+                    const message = `The [ ${child.tagName} ] tag is a duplicate to the tag on line ${htmlChildren.find(subject => child.tagName === subject.tagName).line}.`;
+
+                    reporter.error(message, line, col, this, raw);
+                });
+        });
+    }
+};
+
+/***/ }),
+
+/***/ "2157":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "2444":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17244,6 +17361,66 @@ function factory(...args) {
 
 /***/ }),
 
+/***/ "3699":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, "a", function() { return /* binding */ lint; });
+
+// EXTERNAL MODULE: ./node_modules/capsule-lint/capsule.config.json
+var capsule_config = __webpack_require__("ce93");
+
+// EXTERNAL MODULE: ./node_modules/htmlhint/dist/htmlhint.js
+var htmlhint = __webpack_require__("577f");
+
+// EXTERNAL MODULE: ./node_modules/capsule-lint/rules/head-valid-content-model.js
+var head_valid_content_model = __webpack_require__("7506");
+var head_valid_content_model_default = /*#__PURE__*/__webpack_require__.n(head_valid_content_model);
+
+// EXTERNAL MODULE: ./node_modules/capsule-lint/rules/html-valid-content-model.js
+var html_valid_content_model = __webpack_require__("210c");
+var html_valid_content_model_default = /*#__PURE__*/__webpack_require__.n(html_valid_content_model);
+
+// EXTERNAL MODULE: ./node_modules/capsule-lint/rules/valid-path-format.js
+var valid_path_format = __webpack_require__("fd7f");
+var valid_path_format_default = /*#__PURE__*/__webpack_require__.n(valid_path_format);
+
+// CONCATENATED MODULE: ./node_modules/capsule-lint/rules/index.js
+
+
+
+
+const rules = {
+    'head-valid-content-model': head_valid_content_model_default.a,
+    'html-valid-content-model': html_valid_content_model_default.a,
+    'valid-path-format': valid_path_format_default.a,
+};
+// CONCATENATED MODULE: ./node_modules/capsule-lint/index.js
+
+
+
+
+Object.keys(rules).forEach((key) => {
+    htmlhint["HTMLHint"].addRule(rules[key]);
+});
+
+function lint(html, config) {
+    return htmlhint["HTMLHint"].verify(html, config || capsule_config).map(error => {    
+        error.rule.link = error.rule.link.replace(
+            'https://github.com/thedaviddias/HTMLHint/wiki/',
+            'https://thecapsule.email/docs/codes/'
+        );
+
+        return error;
+    });
+}
+
+
+
+/***/ }),
+
 /***/ "3711":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17639,6 +17816,154 @@ function immediate(task) {
   }
 }
 
+
+/***/ }),
+
+/***/ "3eff":
+/***/ (function(module, exports) {
+
+const EMPTY_TAGS = [
+    'area', 'base', 'basefont', 'br', 'col', 'frame', 'hr', 'img', 'input',
+    'isindex', 'link', 'meta', 'param', 'embed', 'track', 'command', 'source',
+    'keygen', 'wbr'
+];
+
+class EventTree {
+    constructor(parser, finish) {
+        const stack = [];
+        
+        const root = new EventNode();
+        
+        let parentNode = root;
+
+        parser.addListener('tagstart', event => {
+            const node = new EventNode(event, parentNode);
+
+            parentNode.push(node);
+
+            if(!node.closed) {
+                stack.push(parentNode = node);
+            }
+        });
+
+        parser.addListener('tagend', event => {
+            const tagName = event.tagName.toLowerCase();
+            
+            let pos;
+
+            for(pos = stack.length - 1; pos >= 0; pos--) {
+                if(stack[pos].tagName === tagName) {
+                    break;
+                }
+            }
+
+            if(stack[pos]) {
+                parentNode = stack[pos].parent;
+                
+                stack[pos].closed = true;
+                stack.splice(pos, 1);
+            }
+        });
+
+        parser.addListener('end', event => {
+            root.closed = true;
+            
+            finish && finish(root);
+        });
+    }
+};
+
+class EventNode {
+    constructor(event, parent) {
+        event = event || {};
+
+        const tagName = event.tagName && event.tagName.toLowerCase();
+
+        this.children = [];
+
+        if(this.root === parent) {
+            this.root = true;
+        }
+        else {
+            this.closed = !!event.close || EMPTY_TAGS.indexOf(tagName) > -1;
+            this.parent = parent;
+            this.tagName = tagName;
+            this.attrs = event.attrs;
+            this.col = event.col;
+            this.line = event.line;
+            this.raw = event.raw;
+        }
+    }
+
+    push(event) {
+        return this.children.push(event);
+    }
+
+    before(index) {
+        return this.children.slice(0, index);
+    }
+
+    after(index) {
+        return this.children.slice(index + 1);
+    }
+
+    find(...args) {
+        const find = children => {
+            return children.reduce((carry, child) => {
+                if(child.match(...args)) {
+                    carry.push(child);
+                }
+
+                if(child.children.length) {
+                    carry = carry.concat(find(child.children));
+                }
+
+                return carry;
+            }, []);
+        };
+
+        return find(this.children);
+    }
+
+    findFirst(tagName) {
+        return this.find(tagName)[0];
+    }
+
+    index() {
+        return this.parent ? this.parent.children.indexOf(this) : 0;
+    }
+
+    isChildOf(subject) {
+        return this.parent === subject;
+    }
+
+    isBefore(subject) {
+        return this.index() < subject.index();
+    }
+
+    isAfter(subject) {
+        return this.index() > subject.index();
+    }
+
+    isFirst() {
+        return !this.parent || this.index() === 0;
+    }
+
+    isLast() {
+        return !this.parent || this.index() === this.parent.children.length - 1;
+    }
+    
+    first() {
+        return this.children[0];
+    }
+
+    match(...args) {
+        return args.indexOf(this.tagName && this.tagName.toLowerCase()) > -1;
+    }
+
+};
+
+module.exports = EventTree;
 
 /***/ }),
 
@@ -18163,7 +18488,7 @@ exports.install = function (func) {
 
 "use strict";
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"35d0dc38-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/@vue-interface/input-field/src/InputField.vue?vue&type=template&id=1871e02f&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"54068579-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/@vue-interface/input-field/src/InputField.vue?vue&type=template&id=1871e02f&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{class:_vm.formGroupClasses},[_vm._t("label",function(){return [(_vm.label)?_c('label',{ref:"label",class:_vm.labelClass,attrs:{"for":_vm.id},domProps:{"innerHTML":_vm._s(_vm.label)}}):_vm._e()]}),_c('div',{staticClass:"form-group-inner"},[_vm._t("control",function(){return [(_vm.$slots.icon)?_c('div',{staticClass:"form-group-inner-icon",on:{"click":function($event){return _vm.$refs.field.focus()}}},[_vm._t("icon")],2):_vm._e(),_c('input',_vm._b({directives:[{name:"bind-events",rawName:"v-bind-events"}],ref:"field",domProps:{"value":_vm.currentValue},on:{"input":_vm.onInput}},'input',_vm.controlAttributes,false))]}),_vm._t("activity",function(){return [_c('transition',{attrs:{"name":"input-field-fade"}},[(_vm.activity)?_c('activity-indicator',{key:"activity",ref:"activity",attrs:{"type":_vm.indicator,"size":_vm.indicatorSize || _vm.size}}):_vm._e()],1)]})],2),_vm._t("feedback",function(){return [(_vm.invalidFeedback)?_c('div',{staticClass:"invalid-feedback",attrs:{"invalid":""},domProps:{"innerHTML":_vm._s(_vm.invalidFeedback)}}):(_vm.validFeedback)?_c('div',{staticClass:"valid-feedback",attrs:{"valid":""},domProps:{"innerHTML":_vm._s(_vm.validFeedback)}}):_vm._e()]}),_vm._t("help",function(){return [(_vm.helpText)?_c('small',{ref:"help"},[_vm._v(" "+_vm._s(_vm.helpText)+" ")]):_vm._e()]})],2)}
 var staticRenderFns = []
 
@@ -18799,10 +19124,1656 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
+/***/ "577f":
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {(function (global, factory) {
+	 true ? module.exports = factory() :
+	undefined;
+}(this, (function () { 'use strict';
+
+	var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
+
+	function unwrapExports (x) {
+		return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
+	}
+
+	function createCommonjsModule(fn, basedir, module) {
+		return module = {
+		  path: basedir,
+		  exports: {},
+		  require: function (path, base) {
+	      return commonjsRequire(path, (base === undefined || base === null) ? module.path : base);
+	    }
+		}, fn(module, module.exports), module.exports;
+	}
+
+	function commonjsRequire () {
+		throw new Error('Dynamic requires are not currently supported by @rollup/plugin-commonjs');
+	}
+
+	var htmlparser = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	var HTMLParser = (function () {
+	    function HTMLParser() {
+	        this._listeners = {};
+	        this._mapCdataTags = this.makeMap('script,style');
+	        this._arrBlocks = [];
+	        this.lastEvent = null;
+	    }
+	    HTMLParser.prototype.makeMap = function (str) {
+	        var obj = {};
+	        var items = str.split(',');
+	        for (var i = 0; i < items.length; i++) {
+	            obj[items[i]] = true;
+	        }
+	        return obj;
+	    };
+	    HTMLParser.prototype.parse = function (html) {
+	        var _this = this;
+	        var mapCdataTags = this._mapCdataTags;
+	        var regTag = /<(?:\/([^\s>]+)\s*|!--([\s\S]*?)--|!([^>]*?)|([\w\-:]+)((?:\s+[^\s"'>\/=\x00-\x0F\x7F\x80-\x9F]+(?:\s*=\s*(?:"[^"]*"|'[^']*'|[^\s"'>]*))?)*?)\s*(\/?))>/g;
+	        var regAttr = /\s*([^\s"'>\/=\x00-\x0F\x7F\x80-\x9F]+)(?:\s*=\s*(?:(")([^"]*)"|(')([^']*)'|([^\s"'>]*)))?/g;
+	        var regLine = /\r?\n/g;
+	        var match;
+	        var matchIndex;
+	        var lastIndex = 0;
+	        var tagName;
+	        var arrAttrs;
+	        var tagCDATA = null;
+	        var attrsCDATA;
+	        var arrCDATA = [];
+	        var lastCDATAIndex = 0;
+	        var text;
+	        var lastLineIndex = 0;
+	        var line = 1;
+	        var arrBlocks = this._arrBlocks;
+	        this.fire('start', {
+	            pos: 0,
+	            line: 1,
+	            col: 1,
+	        });
+	        var isMapCdataTagsRequired = function () {
+	            var attrType = arrAttrs.find(function (attr) { return attr.name === 'type'; }) || {
+	                value: '',
+	            };
+	            return (mapCdataTags[tagName] &&
+	                attrType.value.indexOf('text/ng-template') === -1);
+	        };
+	        var saveBlock = function (type, raw, pos, data) {
+	            var col = pos - lastLineIndex + 1;
+	            if (data === undefined) {
+	                data = {};
+	            }
+	            data.raw = raw;
+	            data.pos = pos;
+	            data.line = line;
+	            data.col = col;
+	            arrBlocks.push(data);
+	            _this.fire(type, data);
+	            var lineMatch;
+	            while ((lineMatch = regLine.exec(raw))) {
+	                line++;
+	                lastLineIndex = pos + regLine.lastIndex;
+	            }
+	        };
+	        while ((match = regTag.exec(html))) {
+	            matchIndex = match.index;
+	            if (matchIndex > lastIndex) {
+	                text = html.substring(lastIndex, matchIndex);
+	                if (tagCDATA) {
+	                    arrCDATA.push(text);
+	                }
+	                else {
+	                    saveBlock('text', text, lastIndex);
+	                }
+	            }
+	            lastIndex = regTag.lastIndex;
+	            if ((tagName = match[1])) {
+	                if (tagCDATA && tagName === tagCDATA) {
+	                    text = arrCDATA.join('');
+	                    saveBlock('cdata', text, lastCDATAIndex, {
+	                        tagName: tagCDATA,
+	                        attrs: attrsCDATA,
+	                    });
+	                    tagCDATA = null;
+	                    attrsCDATA = undefined;
+	                    arrCDATA = [];
+	                }
+	                if (!tagCDATA) {
+	                    saveBlock('tagend', match[0], matchIndex, {
+	                        tagName: tagName,
+	                    });
+	                    continue;
+	                }
+	            }
+	            if (tagCDATA) {
+	                arrCDATA.push(match[0]);
+	            }
+	            else {
+	                if ((tagName = match[4])) {
+	                    arrAttrs = [];
+	                    var attrs = match[5];
+	                    var attrMatch = void 0;
+	                    var attrMatchCount = 0;
+	                    while ((attrMatch = regAttr.exec(attrs))) {
+	                        var name_1 = attrMatch[1];
+	                        var quote = attrMatch[2]
+	                            ? attrMatch[2]
+	                            : attrMatch[4]
+	                                ? attrMatch[4]
+	                                : '';
+	                        var value = attrMatch[3]
+	                            ? attrMatch[3]
+	                            : attrMatch[5]
+	                                ? attrMatch[5]
+	                                : attrMatch[6]
+	                                    ? attrMatch[6]
+	                                    : '';
+	                        arrAttrs.push({
+	                            name: name_1,
+	                            value: value,
+	                            quote: quote,
+	                            index: attrMatch.index,
+	                            raw: attrMatch[0],
+	                        });
+	                        attrMatchCount += attrMatch[0].length;
+	                    }
+	                    if (attrMatchCount === attrs.length) {
+	                        saveBlock('tagstart', match[0], matchIndex, {
+	                            tagName: tagName,
+	                            attrs: arrAttrs,
+	                            close: match[6],
+	                        });
+	                        if (isMapCdataTagsRequired()) {
+	                            tagCDATA = tagName;
+	                            attrsCDATA = arrAttrs.concat();
+	                            arrCDATA = [];
+	                            lastCDATAIndex = lastIndex;
+	                        }
+	                    }
+	                    else {
+	                        saveBlock('text', match[0], matchIndex);
+	                    }
+	                }
+	                else if (match[2] || match[3]) {
+	                    saveBlock('comment', match[0], matchIndex, {
+	                        content: match[2] || match[3],
+	                        long: match[2] ? true : false,
+	                    });
+	                }
+	            }
+	        }
+	        if (html.length > lastIndex) {
+	            text = html.substring(lastIndex, html.length);
+	            saveBlock('text', text, lastIndex);
+	        }
+	        this.fire('end', {
+	            pos: lastIndex,
+	            line: line,
+	            col: html.length - lastLineIndex + 1,
+	        });
+	    };
+	    HTMLParser.prototype.addListener = function (types, listener) {
+	        var _listeners = this._listeners;
+	        var arrTypes = types.split(/[,\s]/);
+	        var type;
+	        for (var i = 0, l = arrTypes.length; i < l; i++) {
+	            type = arrTypes[i];
+	            if (_listeners[type] === undefined) {
+	                _listeners[type] = [];
+	            }
+	            _listeners[type].push(listener);
+	        }
+	    };
+	    HTMLParser.prototype.fire = function (type, data) {
+	        if (data === undefined) {
+	            data = {};
+	        }
+	        data.type = type;
+	        var listeners = [];
+	        var listenersType = this._listeners[type];
+	        var listenersAll = this._listeners['all'];
+	        if (listenersType !== undefined) {
+	            listeners = listeners.concat(listenersType);
+	        }
+	        if (listenersAll !== undefined) {
+	            listeners = listeners.concat(listenersAll);
+	        }
+	        var lastEvent = this.lastEvent;
+	        if (lastEvent !== null) {
+	            delete lastEvent['lastEvent'];
+	            data.lastEvent = lastEvent;
+	        }
+	        this.lastEvent = data;
+	        for (var i = 0, l = listeners.length; i < l; i++) {
+	            listeners[i].call(this, data);
+	        }
+	    };
+	    HTMLParser.prototype.removeListener = function (type, listener) {
+	        var listenersType = this._listeners[type];
+	        if (listenersType !== undefined) {
+	            for (var i = 0, l = listenersType.length; i < l; i++) {
+	                if (listenersType[i] === listener) {
+	                    listenersType.splice(i, 1);
+	                    break;
+	                }
+	            }
+	        }
+	    };
+	    HTMLParser.prototype.fixPos = function (event, index) {
+	        var text = event.raw.substr(0, index);
+	        var arrLines = text.split(/\r?\n/);
+	        var lineCount = arrLines.length - 1;
+	        var line = event.line;
+	        var col;
+	        if (lineCount > 0) {
+	            line += lineCount;
+	            col = arrLines[lineCount].length + 1;
+	        }
+	        else {
+	            col = event.col + index;
+	        }
+	        return {
+	            line: line,
+	            col: col,
+	        };
+	    };
+	    HTMLParser.prototype.getMapAttrs = function (arrAttrs) {
+	        var mapAttrs = {};
+	        var attr;
+	        for (var i = 0, l = arrAttrs.length; i < l; i++) {
+	            attr = arrAttrs[i];
+	            mapAttrs[attr.name] = attr.value;
+	        }
+	        return mapAttrs;
+	    };
+	    return HTMLParser;
+	}());
+	exports.default = HTMLParser;
+
+	});
+
+	var reporter = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	var Reporter = (function () {
+	    function Reporter(html, ruleset) {
+	        this.html = html;
+	        this.lines = html.split(/\r?\n/);
+	        var match = /\r?\n/.exec(html);
+	        this.brLen = match !== null ? match[0].length : 0;
+	        this.ruleset = ruleset;
+	        this.messages = [];
+	    }
+	    Reporter.prototype.info = function (message, line, col, rule, raw) {
+	        this.report("info", message, line, col, rule, raw);
+	    };
+	    Reporter.prototype.warn = function (message, line, col, rule, raw) {
+	        this.report("warning", message, line, col, rule, raw);
+	    };
+	    Reporter.prototype.error = function (message, line, col, rule, raw) {
+	        this.report("error", message, line, col, rule, raw);
+	    };
+	    Reporter.prototype.report = function (type, message, line, col, rule, raw) {
+	        var lines = this.lines;
+	        var brLen = this.brLen;
+	        var evidence = '';
+	        var evidenceLen = 0;
+	        for (var i = line - 1, lineCount = lines.length; i < lineCount; i++) {
+	            evidence = lines[i];
+	            evidenceLen = evidence.length;
+	            if (col > evidenceLen && line < lineCount) {
+	                line++;
+	                col -= evidenceLen;
+	                if (col !== 1) {
+	                    col -= brLen;
+	                }
+	            }
+	            else {
+	                break;
+	            }
+	        }
+	        this.messages.push({
+	            type: type,
+	            message: message,
+	            raw: raw,
+	            evidence: evidence,
+	            line: line,
+	            col: col,
+	            rule: {
+	                id: rule.id,
+	                description: rule.description,
+	                link: "https://github.com/thedaviddias/HTMLHint/wiki/" + rule.id,
+	            },
+	        });
+	    };
+	    return Reporter;
+	}());
+	exports.default = Reporter;
+
+	});
+
+	var altRequire = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'alt-require',
+	    description: 'The alt attribute of an <img> element must be present and alt attribute of area[href] and input[type=image] must have a value.',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        parser.addListener('tagstart', function (event) {
+	            var tagName = event.tagName.toLowerCase();
+	            var mapAttrs = parser.getMapAttrs(event.attrs);
+	            var col = event.col + tagName.length + 1;
+	            var selector;
+	            if (tagName === 'img' && !('alt' in mapAttrs)) {
+	                reporter.warn('An alt attribute must be present on <img> elements.', event.line, col, _this, event.raw);
+	            }
+	            else if ((tagName === 'area' && 'href' in mapAttrs) ||
+	                (tagName === 'input' && mapAttrs['type'] === 'image')) {
+	                if (!('alt' in mapAttrs) || mapAttrs['alt'] === '') {
+	                    selector = tagName === 'area' ? 'area[href]' : 'input[type=image]';
+	                    reporter.warn("The alt attribute of " + selector + " must have a value.", event.line, col, _this, event.raw);
+	                }
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var attrLowercase = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	function testAgainstStringOrRegExp(value, comparison) {
+	    if (comparison instanceof RegExp) {
+	        return comparison.test(value)
+	            ? { match: value, pattern: comparison }
+	            : false;
+	    }
+	    var firstComparisonChar = comparison[0];
+	    var lastComparisonChar = comparison[comparison.length - 1];
+	    var secondToLastComparisonChar = comparison[comparison.length - 2];
+	    var comparisonIsRegex = firstComparisonChar === '/' &&
+	        (lastComparisonChar === '/' ||
+	            (secondToLastComparisonChar === '/' && lastComparisonChar === 'i'));
+	    var hasCaseInsensitiveFlag = comparisonIsRegex && lastComparisonChar === 'i';
+	    if (comparisonIsRegex) {
+	        var valueMatches = hasCaseInsensitiveFlag
+	            ? new RegExp(comparison.slice(1, -2), 'i').test(value)
+	            : new RegExp(comparison.slice(1, -1)).test(value);
+	        return valueMatches;
+	    }
+	    return value === comparison;
+	}
+	exports.default = {
+	    id: 'attr-lowercase',
+	    description: 'All attribute names must be in lowercase.',
+	    init: function (parser, reporter, options) {
+	        var _this = this;
+	        var exceptions = Array.isArray(options) ? options : [];
+	        parser.addListener('tagstart', function (event) {
+	            var attrs = event.attrs;
+	            var attr;
+	            var col = event.col + event.tagName.length + 1;
+	            var _loop_1 = function (i, l) {
+	                attr = attrs[i];
+	                var attrName = attr.name;
+	                if (!exceptions.find(function (exp) { return testAgainstStringOrRegExp(attrName, exp); }) &&
+	                    attrName !== attrName.toLowerCase()) {
+	                    reporter.error("The attribute name of [ " + attrName + " ] must be in lowercase.", event.line, col + attr.index, _this, attr.raw);
+	                }
+	            };
+	            for (var i = 0, l = attrs.length; i < l; i++) {
+	                _loop_1(i);
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var attrSorted = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'attr-sorted',
+	    description: 'Attribute tags must be in proper order.',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        var orderMap = {};
+	        var sortOrder = [
+	            'class',
+	            'id',
+	            'name',
+	            'src',
+	            'for',
+	            'type',
+	            'href',
+	            'value',
+	            'title',
+	            'alt',
+	            'role',
+	        ];
+	        for (var i = 0; i < sortOrder.length; i++) {
+	            orderMap[sortOrder[i]] = i;
+	        }
+	        parser.addListener('tagstart', function (event) {
+	            var attrs = event.attrs;
+	            var listOfAttributes = [];
+	            for (var i = 0; i < attrs.length; i++) {
+	                listOfAttributes.push(attrs[i].name);
+	            }
+	            var originalAttrs = JSON.stringify(listOfAttributes);
+	            listOfAttributes.sort(function (a, b) {
+	                if (orderMap[a] == undefined && orderMap[b] == undefined) {
+	                    return 0;
+	                }
+	                if (orderMap[a] == undefined) {
+	                    return 1;
+	                }
+	                else if (orderMap[b] == undefined) {
+	                    return -1;
+	                }
+	                return orderMap[a] - orderMap[b] || a.localeCompare(b);
+	            });
+	            if (originalAttrs !== JSON.stringify(listOfAttributes)) {
+	                reporter.error("Inaccurate order " + originalAttrs + " should be in hierarchy " + JSON.stringify(listOfAttributes) + " ", event.line, event.col, _this, event.raw);
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var attrNoDuplication = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'attr-no-duplication',
+	    description: 'Elements cannot have duplicate attributes.',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        parser.addListener('tagstart', function (event) {
+	            var attrs = event.attrs;
+	            var attr;
+	            var attrName;
+	            var col = event.col + event.tagName.length + 1;
+	            var mapAttrName = {};
+	            for (var i = 0, l = attrs.length; i < l; i++) {
+	                attr = attrs[i];
+	                attrName = attr.name;
+	                if (mapAttrName[attrName] === true) {
+	                    reporter.error("Duplicate of attribute name [ " + attr.name + " ] was found.", event.line, col + attr.index, _this, attr.raw);
+	                }
+	                mapAttrName[attrName] = true;
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var attrUnsafeChars = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'attr-unsafe-chars',
+	    description: 'Attribute values cannot contain unsafe chars.',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        parser.addListener('tagstart', function (event) {
+	            var attrs = event.attrs;
+	            var attr;
+	            var col = event.col + event.tagName.length + 1;
+	            var regUnsafe = /[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f-\u009f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/;
+	            var match;
+	            for (var i = 0, l = attrs.length; i < l; i++) {
+	                attr = attrs[i];
+	                match = regUnsafe.exec(attr.value);
+	                if (match !== null) {
+	                    var unsafeCode = escape(match[0])
+	                        .replace(/%u/, '\\u')
+	                        .replace(/%/, '\\x');
+	                    reporter.warn("The value of attribute [ " + attr.name + " ] cannot contain an unsafe char [ " + unsafeCode + " ].", event.line, col + attr.index, _this, attr.raw);
+	                }
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var attrValueDoubleQuotes = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'attr-value-double-quotes',
+	    description: 'Attribute values must be in double quotes.',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        parser.addListener('tagstart', function (event) {
+	            var attrs = event.attrs;
+	            var attr;
+	            var col = event.col + event.tagName.length + 1;
+	            for (var i = 0, l = attrs.length; i < l; i++) {
+	                attr = attrs[i];
+	                if ((attr.value !== '' && attr.quote !== '"') ||
+	                    (attr.value === '' && attr.quote === "'")) {
+	                    reporter.error("The value of attribute [ " + attr.name + " ] must be in double quotes.", event.line, col + attr.index, _this, attr.raw);
+	                }
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var attrValueNotEmpty = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'attr-value-not-empty',
+	    description: 'All attributes must have values.',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        parser.addListener('tagstart', function (event) {
+	            var attrs = event.attrs;
+	            var attr;
+	            var col = event.col + event.tagName.length + 1;
+	            for (var i = 0, l = attrs.length; i < l; i++) {
+	                attr = attrs[i];
+	                if (attr.quote === '' && attr.value === '') {
+	                    reporter.warn("The attribute [ " + attr.name + " ] must have a value.", event.line, col + attr.index, _this, attr.raw);
+	                }
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var attrValueSingleQuotes = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'attr-value-single-quotes',
+	    description: 'Attribute values must be in single quotes.',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        parser.addListener('tagstart', function (event) {
+	            var attrs = event.attrs;
+	            var attr;
+	            var col = event.col + event.tagName.length + 1;
+	            for (var i = 0, l = attrs.length; i < l; i++) {
+	                attr = attrs[i];
+	                if ((attr.value !== '' && attr.quote !== "'") ||
+	                    (attr.value === '' && attr.quote === '"')) {
+	                    reporter.error("The value of attribute [ " + attr.name + " ] must be in single quotes.", event.line, col + attr.index, _this, attr.raw);
+	                }
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var attrWhitespace = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'attr-whitespace',
+	    description: 'All attributes should be separated by only one space and not have leading/trailing whitespace.',
+	    init: function (parser, reporter, options) {
+	        var _this = this;
+	        var exceptions = Array.isArray(options)
+	            ? options
+	            : [];
+	        parser.addListener('tagstart', function (event) {
+	            var attrs = event.attrs;
+	            var attr;
+	            var col = event.col + event.tagName.length + 1;
+	            attrs.forEach(function (elem) {
+	                attr = elem;
+	                var attrName = elem.name;
+	                if (exceptions.indexOf(attrName) !== -1) {
+	                    return;
+	                }
+	                if (elem.value.trim() !== elem.value) {
+	                    reporter.error("The attributes of [ " + attrName + " ] must not have trailing whitespace.", event.line, col + attr.index, _this, attr.raw);
+	                }
+	                if (elem.value.replace(/ +(?= )/g, '') !== elem.value) {
+	                    reporter.error("The attributes of [ " + attrName + " ] must be separated by only one space.", event.line, col + attr.index, _this, attr.raw);
+	                }
+	            });
+	        });
+	    },
+	};
+
+	});
+
+	var doctypeFirst = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'doctype-first',
+	    description: 'Doctype must be declared first.',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        var allEvent = function (event) {
+	            if (event.type === 'start' ||
+	                (event.type === 'text' && /^\s*$/.test(event.raw))) {
+	                return;
+	            }
+	            if ((event.type !== 'comment' && event.long === false) ||
+	                /^DOCTYPE\s+/i.test(event.content) === false) {
+	                reporter.error('Doctype must be declared first.', event.line, event.col, _this, event.raw);
+	            }
+	            parser.removeListener('all', allEvent);
+	        };
+	        parser.addListener('all', allEvent);
+	    },
+	};
+
+	});
+
+	var doctypeHtml5 = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'doctype-html5',
+	    description: 'Invalid doctype. Use: "<!DOCTYPE html>"',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        var onComment = function (event) {
+	            if (event.long === false &&
+	                event.content.toLowerCase() !== 'doctype html') {
+	                reporter.warn('Invalid doctype. Use: "<!DOCTYPE html>"', event.line, event.col, _this, event.raw);
+	            }
+	        };
+	        var onTagStart = function () {
+	            parser.removeListener('comment', onComment);
+	            parser.removeListener('tagstart', onTagStart);
+	        };
+	        parser.addListener('all', onComment);
+	        parser.addListener('tagstart', onTagStart);
+	    },
+	};
+
+	});
+
+	var headScriptDisabled = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'head-script-disabled',
+	    description: 'The <script> tag cannot be used in a <head> tag.',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        var reScript = /^(text\/javascript|application\/javascript)$/i;
+	        var isInHead = false;
+	        var onTagStart = function (event) {
+	            var mapAttrs = parser.getMapAttrs(event.attrs);
+	            var type = mapAttrs.type;
+	            var tagName = event.tagName.toLowerCase();
+	            if (tagName === 'head') {
+	                isInHead = true;
+	            }
+	            if (isInHead === true &&
+	                tagName === 'script' &&
+	                (!type || reScript.test(type) === true)) {
+	                reporter.warn('The <script> tag cannot be used in a <head> tag.', event.line, event.col, _this, event.raw);
+	            }
+	        };
+	        var onTagEnd = function (event) {
+	            if (event.tagName.toLowerCase() === 'head') {
+	                parser.removeListener('tagstart', onTagStart);
+	                parser.removeListener('tagend', onTagEnd);
+	            }
+	        };
+	        parser.addListener('tagstart', onTagStart);
+	        parser.addListener('tagend', onTagEnd);
+	    },
+	};
+
+	});
+
+	var hrefAbsOrRel = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'href-abs-or-rel',
+	    description: 'An href attribute must be either absolute or relative.',
+	    init: function (parser, reporter, options) {
+	        var _this = this;
+	        var hrefMode = options === 'abs' ? 'absolute' : 'relative';
+	        parser.addListener('tagstart', function (event) {
+	            var attrs = event.attrs;
+	            var attr;
+	            var col = event.col + event.tagName.length + 1;
+	            for (var i = 0, l = attrs.length; i < l; i++) {
+	                attr = attrs[i];
+	                if (attr.name === 'href') {
+	                    if ((hrefMode === 'absolute' && /^\w+?:/.test(attr.value) === false) ||
+	                        (hrefMode === 'relative' &&
+	                            /^https?:\/\//.test(attr.value) === true)) {
+	                        reporter.warn("The value of the href attribute [ " + attr.value + " ] must be " + hrefMode + ".", event.line, col + attr.index, _this, attr.raw);
+	                    }
+	                    break;
+	                }
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var htmlLangRequire = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	var regular = '(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)';
+	var irregular = '(en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)';
+	var grandfathered = "(?<grandfathered>" + irregular + "|" + regular + ")";
+	var privateUse = '(?<privateUse>x(-[A-Za-z0-9]{1,8})+)';
+	var privateUse2 = '(?<privateUse2>x(-[A-Za-z0-9]{1,8})+)';
+	var singleton = '[0-9A-WY-Za-wy-z]';
+	var extension = "(?<extension>" + singleton + "(-[A-Za-z0-9]{2,8})+)";
+	var variant = '(?<variant>[A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3})';
+	var region = '(?<region>[A-Za-z]{2}|[0-9]{3})';
+	var script = '(?<script>[A-Za-z]{4})';
+	var extlang = '(?<extlang>[A-Za-z]{3}(-[A-Za-z]{3}){0,2})';
+	var language = "(?<language>([A-Za-z]{2,3}(-" + extlang + ")?)|[A-Za-z]{4}|[A-Za-z]{5,8})";
+	var langtag = "(" + language + "(-" + script + ")?" +
+	    ("(-" + region + ")?") +
+	    ("(-" + variant + ")*") +
+	    ("(-" + extension + ")*") +
+	    ("(-" + privateUse + ")?") +
+	    ')';
+	var languageTag = "(" + grandfathered + "|" + langtag + "|" + privateUse2 + ")";
+	exports.default = {
+	    id: 'html-lang-require',
+	    description: 'The lang attribute of an <html> element must be present and should be valid.',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        parser.addListener('tagstart', function (event) {
+	            var tagName = event.tagName.toLowerCase();
+	            var mapAttrs = parser.getMapAttrs(event.attrs);
+	            var col = event.col + tagName.length + 1;
+	            var langValidityPattern = new RegExp(languageTag, 'g');
+	            if (tagName === 'html') {
+	                if ('lang' in mapAttrs) {
+	                    if (!mapAttrs['lang']) {
+	                        reporter.warn('The lang attribute of <html> element must have a value.', event.line, col, _this, event.raw);
+	                    }
+	                    else if (!langValidityPattern.test(mapAttrs['lang'])) {
+	                        reporter.warn('The lang attribute value of <html> element must be a valid BCP47.', event.line, col, _this, event.raw);
+	                    }
+	                }
+	                else {
+	                    reporter.warn('An lang attribute must be present on <html> elements.', event.line, col, _this, event.raw);
+	                }
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var idClassAdDisabled = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'id-class-ad-disabled',
+	    description: 'The id and class attributes cannot use the ad keyword, it will be blocked by adblock software.',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        parser.addListener('tagstart', function (event) {
+	            var attrs = event.attrs;
+	            var attr;
+	            var attrName;
+	            var col = event.col + event.tagName.length + 1;
+	            for (var i = 0, l = attrs.length; i < l; i++) {
+	                attr = attrs[i];
+	                attrName = attr.name;
+	                if (/^(id|class)$/i.test(attrName)) {
+	                    if (/(^|[-_])ad([-_]|$)/i.test(attr.value)) {
+	                        reporter.warn("The value of attribute " + attrName + " cannot use the ad keyword.", event.line, col + attr.index, _this, attr.raw);
+	                    }
+	                }
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var idClassValue = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'id-class-value',
+	    description: 'The id and class attribute values must meet the specified rules.',
+	    init: function (parser, reporter, options) {
+	        var _this = this;
+	        var arrRules = {
+	            underline: {
+	                regId: /^[a-z\d]+(_[a-z\d]+)*$/,
+	                message: 'The id and class attribute values must be in lowercase and split by an underscore.',
+	            },
+	            dash: {
+	                regId: /^[a-z\d]+(-[a-z\d]+)*$/,
+	                message: 'The id and class attribute values must be in lowercase and split by a dash.',
+	            },
+	            hump: {
+	                regId: /^[a-z][a-zA-Z\d]*([A-Z][a-zA-Z\d]*)*$/,
+	                message: 'The id and class attribute values must meet the camelCase style.',
+	            },
+	        };
+	        var rule;
+	        if (typeof options === 'string') {
+	            rule = arrRules[options];
+	        }
+	        else {
+	            rule = options;
+	        }
+	        if (typeof rule === 'object' && rule.regId) {
+	            var regId_1 = rule.regId;
+	            var message_1 = rule.message;
+	            if (!(regId_1 instanceof RegExp)) {
+	                regId_1 = new RegExp(regId_1);
+	            }
+	            parser.addListener('tagstart', function (event) {
+	                var attrs = event.attrs;
+	                var attr;
+	                var col = event.col + event.tagName.length + 1;
+	                for (var i = 0, l1 = attrs.length; i < l1; i++) {
+	                    attr = attrs[i];
+	                    if (attr.name.toLowerCase() === 'id') {
+	                        if (regId_1.test(attr.value) === false) {
+	                            reporter.warn(message_1, event.line, col + attr.index, _this, attr.raw);
+	                        }
+	                    }
+	                    if (attr.name.toLowerCase() === 'class') {
+	                        var arrClass = attr.value.split(/\s+/g);
+	                        var classValue = void 0;
+	                        for (var j = 0, l2 = arrClass.length; j < l2; j++) {
+	                            classValue = arrClass[j];
+	                            if (classValue && regId_1.test(classValue) === false) {
+	                                reporter.warn(message_1, event.line, col + attr.index, _this, classValue);
+	                            }
+	                        }
+	                    }
+	                }
+	            });
+	        }
+	    },
+	};
+
+	});
+
+	var idUnique = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'id-unique',
+	    description: 'The value of id attributes must be unique.',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        var mapIdCount = {};
+	        parser.addListener('tagstart', function (event) {
+	            var attrs = event.attrs;
+	            var attr;
+	            var id;
+	            var col = event.col + event.tagName.length + 1;
+	            for (var i = 0, l = attrs.length; i < l; i++) {
+	                attr = attrs[i];
+	                if (attr.name.toLowerCase() === 'id') {
+	                    id = attr.value;
+	                    if (id) {
+	                        if (mapIdCount[id] === undefined) {
+	                            mapIdCount[id] = 1;
+	                        }
+	                        else {
+	                            mapIdCount[id]++;
+	                        }
+	                        if (mapIdCount[id] > 1) {
+	                            reporter.error("The id value [ " + id + " ] must be unique.", event.line, col + attr.index, _this, attr.raw);
+	                        }
+	                    }
+	                    break;
+	                }
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var inlineScriptDisabled = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'inline-script-disabled',
+	    description: 'Inline script cannot be used.',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        parser.addListener('tagstart', function (event) {
+	            var attrs = event.attrs;
+	            var attr;
+	            var col = event.col + event.tagName.length + 1;
+	            var attrName;
+	            var reEvent = /^on(unload|message|submit|select|scroll|resize|mouseover|mouseout|mousemove|mouseleave|mouseenter|mousedown|load|keyup|keypress|keydown|focus|dblclick|click|change|blur|error)$/i;
+	            for (var i = 0, l = attrs.length; i < l; i++) {
+	                attr = attrs[i];
+	                attrName = attr.name.toLowerCase();
+	                if (reEvent.test(attrName) === true) {
+	                    reporter.warn("Inline script [ " + attr.raw + " ] cannot be used.", event.line, col + attr.index, _this, attr.raw);
+	                }
+	                else if (attrName === 'src' || attrName === 'href') {
+	                    if (/^\s*javascript:/i.test(attr.value)) {
+	                        reporter.warn("Inline script [ " + attr.raw + " ] cannot be used.", event.line, col + attr.index, _this, attr.raw);
+	                    }
+	                }
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var inlineStyleDisabled = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'inline-style-disabled',
+	    description: 'Inline style cannot be used.',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        parser.addListener('tagstart', function (event) {
+	            var attrs = event.attrs;
+	            var attr;
+	            var col = event.col + event.tagName.length + 1;
+	            for (var i = 0, l = attrs.length; i < l; i++) {
+	                attr = attrs[i];
+	                if (attr.name.toLowerCase() === 'style') {
+	                    reporter.warn("Inline style [ " + attr.raw + " ] cannot be used.", event.line, col + attr.index, _this, attr.raw);
+	                }
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var inputRequiresLabel = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'input-requires-label',
+	    description: 'All [ input ] tags must have a corresponding [ label ] tag. ',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        var labelTags = [];
+	        var inputTags = [];
+	        parser.addListener('tagstart', function (event) {
+	            var tagName = event.tagName.toLowerCase();
+	            var mapAttrs = parser.getMapAttrs(event.attrs);
+	            var col = event.col + tagName.length + 1;
+	            if (tagName === 'input') {
+	                inputTags.push({ event: event, col: col, id: mapAttrs['id'] });
+	            }
+	            if (tagName === 'label') {
+	                if ('for' in mapAttrs && mapAttrs['for'] !== '') {
+	                    labelTags.push({ event: event, col: col, forValue: mapAttrs['for'] });
+	                }
+	            }
+	        });
+	        parser.addListener('end', function () {
+	            inputTags.forEach(function (inputTag) {
+	                if (!hasMatchingLabelTag(inputTag)) {
+	                    reporter.warn('No matching [ label ] tag found.', inputTag.event.line, inputTag.col, _this, inputTag.event.raw);
+	                }
+	            });
+	        });
+	        function hasMatchingLabelTag(inputTag) {
+	            var found = false;
+	            labelTags.forEach(function (labelTag) {
+	                if (inputTag.id && inputTag.id === labelTag.forValue) {
+	                    found = true;
+	                }
+	            });
+	            return found;
+	        }
+	    },
+	};
+
+	});
+
+	var scriptDisabled = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'script-disabled',
+	    description: 'The <script> tag cannot be used.',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        parser.addListener('tagstart', function (event) {
+	            if (event.tagName.toLowerCase() === 'script') {
+	                reporter.error('The <script> tag cannot be used.', event.line, event.col, _this, event.raw);
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var spaceTabMixedDisabled = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'space-tab-mixed-disabled',
+	    description: 'Do not mix tabs and spaces for indentation.',
+	    init: function (parser, reporter, options) {
+	        var _this = this;
+	        var indentMode = 'nomix';
+	        var spaceLengthRequire = null;
+	        if (typeof options === 'string') {
+	            var match = /^([a-z]+)(\d+)?/.exec(options);
+	            if (match) {
+	                indentMode = match[1];
+	                spaceLengthRequire = match[2] && parseInt(match[2], 10);
+	            }
+	        }
+	        parser.addListener('text', function (event) {
+	            var raw = event.raw;
+	            var reMixed = /(^|\r?\n)([ \t]+)/g;
+	            var match;
+	            while ((match = reMixed.exec(raw))) {
+	                var fixedPos = parser.fixPos(event, match.index + match[1].length);
+	                if (fixedPos.col !== 1) {
+	                    continue;
+	                }
+	                var whiteSpace = match[2];
+	                if (indentMode === 'space') {
+	                    if (spaceLengthRequire) {
+	                        if (/^ +$/.test(whiteSpace) === false ||
+	                            whiteSpace.length % spaceLengthRequire !== 0) {
+	                            reporter.warn("Please use space for indentation and keep " + spaceLengthRequire + " length.", fixedPos.line, 1, _this, event.raw);
+	                        }
+	                    }
+	                    else {
+	                        if (/^ +$/.test(whiteSpace) === false) {
+	                            reporter.warn('Please use space for indentation.', fixedPos.line, 1, _this, event.raw);
+	                        }
+	                    }
+	                }
+	                else if (indentMode === 'tab' && /^\t+$/.test(whiteSpace) === false) {
+	                    reporter.warn('Please use tab for indentation.', fixedPos.line, 1, _this, event.raw);
+	                }
+	                else if (/ +\t|\t+ /.test(whiteSpace) === true) {
+	                    reporter.warn('Do not mix tabs and spaces for indentation.', fixedPos.line, 1, _this, event.raw);
+	                }
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var specCharEscape = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'spec-char-escape',
+	    description: 'Special characters must be escaped.',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        parser.addListener('text', function (event) {
+	            var raw = event.raw;
+	            var reSpecChar = /([<>])|( \& )/g;
+	            var match;
+	            while ((match = reSpecChar.exec(raw))) {
+	                var fixedPos = parser.fixPos(event, match.index);
+	                reporter.error("Special characters must be escaped : [ " + match[0] + " ].", fixedPos.line, fixedPos.col, _this, event.raw);
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var srcNotEmpty = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'src-not-empty',
+	    description: 'The src attribute of an img(script,link) must have a value.',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        parser.addListener('tagstart', function (event) {
+	            var tagName = event.tagName;
+	            var attrs = event.attrs;
+	            var attr;
+	            var col = event.col + tagName.length + 1;
+	            for (var i = 0, l = attrs.length; i < l; i++) {
+	                attr = attrs[i];
+	                if (((/^(img|script|embed|bgsound|iframe)$/.test(tagName) === true &&
+	                    attr.name === 'src') ||
+	                    (tagName === 'link' && attr.name === 'href') ||
+	                    (tagName === 'object' && attr.name === 'data')) &&
+	                    attr.value === '') {
+	                    reporter.error("The attribute [ " + attr.name + " ] of the tag [ " + tagName + " ] must have a value.", event.line, col + attr.index, _this, attr.raw);
+	                }
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var styleDisabled = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'style-disabled',
+	    description: '<style> tags cannot be used.',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        parser.addListener('tagstart', function (event) {
+	            if (event.tagName.toLowerCase() === 'style') {
+	                reporter.warn('The <style> tag cannot be used.', event.line, event.col, _this, event.raw);
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var tagPair = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'tag-pair',
+	    description: 'Tag must be paired.',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        var stack = [];
+	        var mapEmptyTags = parser.makeMap('area,base,basefont,br,col,frame,hr,img,input,isindex,link,meta,param,embed,track,command,source,keygen,wbr');
+	        parser.addListener('tagstart', function (event) {
+	            var tagName = event.tagName.toLowerCase();
+	            if (mapEmptyTags[tagName] === undefined && !event.close) {
+	                stack.push({
+	                    tagName: tagName,
+	                    line: event.line,
+	                    raw: event.raw,
+	                });
+	            }
+	        });
+	        parser.addListener('tagend', function (event) {
+	            var tagName = event.tagName.toLowerCase();
+	            var pos;
+	            for (pos = stack.length - 1; pos >= 0; pos--) {
+	                if (stack[pos].tagName === tagName) {
+	                    break;
+	                }
+	            }
+	            if (pos >= 0) {
+	                var arrTags = [];
+	                for (var i = stack.length - 1; i > pos; i--) {
+	                    arrTags.push("</" + stack[i].tagName + ">");
+	                }
+	                if (arrTags.length > 0) {
+	                    var lastEvent = stack[stack.length - 1];
+	                    reporter.error("Tag must be paired, missing: [ " + arrTags.join('') + " ], start tag match failed [ " + lastEvent.raw + " ] on line " + lastEvent.line + ".", event.line, event.col, _this, event.raw);
+	                }
+	                stack.length = pos;
+	            }
+	            else {
+	                reporter.error("Tag must be paired, no start tag: [ " + event.raw + " ]", event.line, event.col, _this, event.raw);
+	            }
+	        });
+	        parser.addListener('end', function (event) {
+	            var arrTags = [];
+	            for (var i = stack.length - 1; i >= 0; i--) {
+	                arrTags.push("</" + stack[i].tagName + ">");
+	            }
+	            if (arrTags.length > 0) {
+	                var lastEvent = stack[stack.length - 1];
+	                reporter.error("Tag must be paired, missing: [ " + arrTags.join('') + " ], open tag match failed [ " + lastEvent.raw + " ] on line " + lastEvent.line + ".", event.line, event.col, _this, '');
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var tagSelfClose = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'tag-self-close',
+	    description: 'Empty tags must be self closed.',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        var mapEmptyTags = parser.makeMap('area,base,basefont,br,col,frame,hr,img,input,isindex,link,meta,param,embed,track,command,source,keygen,wbr');
+	        parser.addListener('tagstart', function (event) {
+	            var tagName = event.tagName.toLowerCase();
+	            if (mapEmptyTags[tagName] !== undefined) {
+	                if (!event.close) {
+	                    reporter.warn("The empty tag : [ " + tagName + " ] must be self closed.", event.line, event.col, _this, event.raw);
+	                }
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var tagnameLowercase = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'tagname-lowercase',
+	    description: 'All html element names must be in lowercase.',
+	    init: function (parser, reporter, options) {
+	        var _this = this;
+	        var exceptions = Array.isArray(options)
+	            ? options
+	            : [];
+	        parser.addListener('tagstart,tagend', function (event) {
+	            var tagName = event.tagName;
+	            if (exceptions.indexOf(tagName) === -1 &&
+	                tagName !== tagName.toLowerCase()) {
+	                reporter.error("The html element name of [ " + tagName + " ] must be in lowercase.", event.line, event.col, _this, event.raw);
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var tagnameSpecialchars = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'tagname-specialchars',
+	    description: 'All html element names must be in lowercase.',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        var specialchars = /[^a-zA-Z0-9\-:_]/;
+	        parser.addListener('tagstart,tagend', function (event) {
+	            var tagName = event.tagName;
+	            if (specialchars.test(tagName)) {
+	                reporter.error("The html element name of [ " + tagName + " ] contains special character.", event.line, event.col, _this, event.raw);
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var titleRequire = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'title-require',
+	    description: '<title> must be present in <head> tag.',
+	    init: function (parser, reporter) {
+	        var _this = this;
+	        var headBegin = false;
+	        var hasTitle = false;
+	        var onTagStart = function (event) {
+	            var tagName = event.tagName.toLowerCase();
+	            if (tagName === 'head') {
+	                headBegin = true;
+	            }
+	            else if (tagName === 'title' && headBegin) {
+	                hasTitle = true;
+	            }
+	        };
+	        var onTagEnd = function (event) {
+	            var tagName = event.tagName.toLowerCase();
+	            if (hasTitle && tagName === 'title') {
+	                var lastEvent = event.lastEvent;
+	                if (lastEvent.type !== 'text' ||
+	                    (lastEvent.type === 'text' && /^\s*$/.test(lastEvent.raw) === true)) {
+	                    reporter.error('<title></title> must not be empty.', event.line, event.col, _this, event.raw);
+	                }
+	            }
+	            else if (tagName === 'head') {
+	                if (hasTitle === false) {
+	                    reporter.error('<title> must be present in <head> tag.', event.line, event.col, _this, event.raw);
+	                }
+	                parser.removeListener('tagstart', onTagStart);
+	                parser.removeListener('tagend', onTagEnd);
+	            }
+	        };
+	        parser.addListener('tagstart', onTagStart);
+	        parser.addListener('tagend', onTagEnd);
+	    },
+	};
+
+	});
+
+	var tagsCheck = createCommonjsModule(function (module, exports) {
+	var __assign = (commonjsGlobal && commonjsGlobal.__assign) || function () {
+	    __assign = Object.assign || function(t) {
+	        for (var s, i = 1, n = arguments.length; i < n; i++) {
+	            s = arguments[i];
+	            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+	                t[p] = s[p];
+	        }
+	        return t;
+	    };
+	    return __assign.apply(this, arguments);
+	};
+	Object.defineProperty(exports, "__esModule", { value: true });
+	var tagsTypings = {
+	    a: {
+	        selfclosing: false,
+	        attrsRequired: ['href', 'title'],
+	        redundantAttrs: ['alt'],
+	    },
+	    div: {
+	        selfclosing: false,
+	    },
+	    main: {
+	        selfclosing: false,
+	        redundantAttrs: ['role'],
+	    },
+	    nav: {
+	        selfclosing: false,
+	        redundantAttrs: ['role'],
+	    },
+	    script: {
+	        attrsOptional: [
+	            ['async', 'async'],
+	            ['defer', 'defer'],
+	        ],
+	    },
+	    img: {
+	        selfclosing: true,
+	        attrsRequired: ['src', 'alt', 'title'],
+	    },
+	};
+	exports.default = {
+	    id: 'tags-check',
+	    description: 'Checks html tags.',
+	    init: function (parser, reporter, options) {
+	        var _this = this;
+	        tagsTypings = __assign(__assign({}, tagsTypings), options);
+	        parser.addListener('tagstart', function (event) {
+	            var attrs = event.attrs;
+	            var col = event.col + event.tagName.length + 1;
+	            var tagName = event.tagName.toLowerCase();
+	            if (tagsTypings[tagName]) {
+	                var currentTagType = tagsTypings[tagName];
+	                if (currentTagType.selfclosing === true && !event.close) {
+	                    reporter.warn("The <" + tagName + "> tag must be selfclosing.", event.line, event.col, _this, event.raw);
+	                }
+	                else if (currentTagType.selfclosing === false && event.close) {
+	                    reporter.warn("The <" + tagName + "> tag must not be selfclosing.", event.line, event.col, _this, event.raw);
+	                }
+	                if (Array.isArray(currentTagType.attrsRequired)) {
+	                    var attrsRequired = currentTagType.attrsRequired;
+	                    attrsRequired.forEach(function (id) {
+	                        if (Array.isArray(id)) {
+	                            var copyOfId = id.map(function (a) { return a; });
+	                            var realID_1 = copyOfId.shift();
+	                            var values_1 = copyOfId;
+	                            if (attrs.some(function (attr) { return attr.name === realID_1; })) {
+	                                attrs.forEach(function (attr) {
+	                                    if (attr.name === realID_1 &&
+	                                        values_1.indexOf(attr.value) === -1) {
+	                                        reporter.error("The <" + tagName + "> tag must have attr '" + realID_1 + "' with one value of '" + values_1.join("' or '") + "'.", event.line, col, _this, event.raw);
+	                                    }
+	                                });
+	                            }
+	                            else {
+	                                reporter.error("The <" + tagName + "> tag must have attr '" + realID_1 + "'.", event.line, col, _this, event.raw);
+	                            }
+	                        }
+	                        else if (!attrs.some(function (attr) { return id.split('|').indexOf(attr.name) !== -1; })) {
+	                            reporter.error("The <" + tagName + "> tag must have attr '" + id + "'.", event.line, col, _this, event.raw);
+	                        }
+	                    });
+	                }
+	                if (Array.isArray(currentTagType.attrsOptional)) {
+	                    var attrsOptional = currentTagType.attrsOptional;
+	                    attrsOptional.forEach(function (id) {
+	                        if (Array.isArray(id)) {
+	                            var copyOfId = id.map(function (a) { return a; });
+	                            var realID_2 = copyOfId.shift();
+	                            var values_2 = copyOfId;
+	                            if (attrs.some(function (attr) { return attr.name === realID_2; })) {
+	                                attrs.forEach(function (attr) {
+	                                    if (attr.name === realID_2 &&
+	                                        values_2.indexOf(attr.value) === -1) {
+	                                        reporter.error("The <" + tagName + "> tag must have optional attr '" + realID_2 + "' with one value of '" + values_2.join("' or '") + "'.", event.line, col, _this, event.raw);
+	                                    }
+	                                });
+	                            }
+	                        }
+	                    });
+	                }
+	                if (Array.isArray(currentTagType.redundantAttrs)) {
+	                    var redundantAttrs = currentTagType.redundantAttrs;
+	                    redundantAttrs.forEach(function (attrName) {
+	                        if (attrs.some(function (attr) { return attr.name === attrName; })) {
+	                            reporter.error("The attr '" + attrName + "' is redundant for <" + tagName + "> and should be ommited.", event.line, col, _this, event.raw);
+	                        }
+	                    });
+	                }
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var attrNoUnnecessaryWhitespace = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    id: 'attr-no-unnecessary-whitespace',
+	    description: 'No spaces between attribute names and values.',
+	    init: function (parser, reporter, options) {
+	        var _this = this;
+	        var exceptions = Array.isArray(options) ? options : [];
+	        parser.addListener('tagstart', function (event) {
+	            var attrs = event.attrs;
+	            var col = event.col + event.tagName.length + 1;
+	            for (var i = 0; i < attrs.length; i++) {
+	                if (exceptions.indexOf(attrs[i].name) === -1) {
+	                    var match = /(\s*)=(\s*)/.exec(attrs[i].raw.trim());
+	                    if (match && (match[1].length !== 0 || match[2].length !== 0)) {
+	                        reporter.error("The attribute '" + attrs[i].name + "' must not have spaces between the name and value.", event.line, col + attrs[i].index, _this, attrs[i].raw);
+	                    }
+	                }
+	            }
+	        });
+	    },
+	};
+
+	});
+
+	var rules = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+
+	Object.defineProperty(exports, "altRequire", { enumerable: true, get: function () { return altRequire.default; } });
+
+	Object.defineProperty(exports, "attrLowercase", { enumerable: true, get: function () { return attrLowercase.default; } });
+
+	Object.defineProperty(exports, "attrSort", { enumerable: true, get: function () { return attrSorted.default; } });
+
+	Object.defineProperty(exports, "attrNoDuplication", { enumerable: true, get: function () { return attrNoDuplication.default; } });
+
+	Object.defineProperty(exports, "attrUnsafeChars", { enumerable: true, get: function () { return attrUnsafeChars.default; } });
+
+	Object.defineProperty(exports, "attrValueDoubleQuotes", { enumerable: true, get: function () { return attrValueDoubleQuotes.default; } });
+
+	Object.defineProperty(exports, "attrValueNotEmpty", { enumerable: true, get: function () { return attrValueNotEmpty.default; } });
+
+	Object.defineProperty(exports, "attrValueSingleQuotes", { enumerable: true, get: function () { return attrValueSingleQuotes.default; } });
+
+	Object.defineProperty(exports, "attrWhitespace", { enumerable: true, get: function () { return attrWhitespace.default; } });
+
+	Object.defineProperty(exports, "doctypeFirst", { enumerable: true, get: function () { return doctypeFirst.default; } });
+
+	Object.defineProperty(exports, "doctypeHTML5", { enumerable: true, get: function () { return doctypeHtml5.default; } });
+
+	Object.defineProperty(exports, "headScriptDisabled", { enumerable: true, get: function () { return headScriptDisabled.default; } });
+
+	Object.defineProperty(exports, "hrefAbsOrRel", { enumerable: true, get: function () { return hrefAbsOrRel.default; } });
+
+	Object.defineProperty(exports, "htmlLangRequire", { enumerable: true, get: function () { return htmlLangRequire.default; } });
+
+	Object.defineProperty(exports, "idClsasAdDisabled", { enumerable: true, get: function () { return idClassAdDisabled.default; } });
+
+	Object.defineProperty(exports, "idClassValue", { enumerable: true, get: function () { return idClassValue.default; } });
+
+	Object.defineProperty(exports, "idUnique", { enumerable: true, get: function () { return idUnique.default; } });
+
+	Object.defineProperty(exports, "inlineScriptDisabled", { enumerable: true, get: function () { return inlineScriptDisabled.default; } });
+
+	Object.defineProperty(exports, "inlineStyleDisabled", { enumerable: true, get: function () { return inlineStyleDisabled.default; } });
+
+	Object.defineProperty(exports, "inputRequiresLabel", { enumerable: true, get: function () { return inputRequiresLabel.default; } });
+
+	Object.defineProperty(exports, "scriptDisabled", { enumerable: true, get: function () { return scriptDisabled.default; } });
+
+	Object.defineProperty(exports, "spaceTabMixedDisabled", { enumerable: true, get: function () { return spaceTabMixedDisabled.default; } });
+
+	Object.defineProperty(exports, "specCharEscape", { enumerable: true, get: function () { return specCharEscape.default; } });
+
+	Object.defineProperty(exports, "srcNotEmpty", { enumerable: true, get: function () { return srcNotEmpty.default; } });
+
+	Object.defineProperty(exports, "styleDisabled", { enumerable: true, get: function () { return styleDisabled.default; } });
+
+	Object.defineProperty(exports, "tagPair", { enumerable: true, get: function () { return tagPair.default; } });
+
+	Object.defineProperty(exports, "tagSelfClose", { enumerable: true, get: function () { return tagSelfClose.default; } });
+
+	Object.defineProperty(exports, "tagnameLowercase", { enumerable: true, get: function () { return tagnameLowercase.default; } });
+
+	Object.defineProperty(exports, "tagnameSpecialChars", { enumerable: true, get: function () { return tagnameSpecialchars.default; } });
+
+	Object.defineProperty(exports, "titleRequire", { enumerable: true, get: function () { return titleRequire.default; } });
+
+	Object.defineProperty(exports, "tagsCheck", { enumerable: true, get: function () { return tagsCheck.default; } });
+
+	Object.defineProperty(exports, "attrNoUnnecessaryWhitespace", { enumerable: true, get: function () { return attrNoUnnecessaryWhitespace.default; } });
+
+	});
+
+	var core = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.HTMLParser = exports.Reporter = exports.HTMLRules = exports.HTMLHint = void 0;
+
+	exports.HTMLParser = htmlparser.default;
+
+	exports.Reporter = reporter.default;
+
+	exports.HTMLRules = rules;
+	var HTMLHintCore = (function () {
+	    function HTMLHintCore() {
+	        this.rules = {};
+	        this.defaultRuleset = {
+	            'tagname-lowercase': true,
+	            'attr-lowercase': true,
+	            'attr-value-double-quotes': true,
+	            'doctype-first': true,
+	            'tag-pair': true,
+	            'spec-char-escape': true,
+	            'id-unique': true,
+	            'src-not-empty': true,
+	            'attr-no-duplication': true,
+	            'title-require': true,
+	        };
+	    }
+	    HTMLHintCore.prototype.addRule = function (rule) {
+	        this.rules[rule.id] = rule;
+	    };
+	    HTMLHintCore.prototype.verify = function (html, ruleset) {
+	        if (ruleset === void 0) { ruleset = this.defaultRuleset; }
+	        if (Object.keys(ruleset).length === 0) {
+	            ruleset = this.defaultRuleset;
+	        }
+	        html = html.replace(/^\s*<!--\s*htmlhint\s+([^\r\n]+?)\s*-->/i, function (all, strRuleset) {
+	            strRuleset.replace(/(?:^|,)\s*([^:,]+)\s*(?:\:\s*([^,\s]+))?/g, function (all, ruleId, value) {
+	                ruleset[ruleId] =
+	                    value !== undefined && value.length > 0 ? JSON.parse(value) : true;
+	                return '';
+	            });
+	            return '';
+	        });
+	        var parser = new htmlparser.default();
+	        var reporter$1 = new reporter.default(html, ruleset);
+	        var rules = this.rules;
+	        var rule;
+	        for (var id in ruleset) {
+	            rule = rules[id];
+	            if (rule !== undefined && ruleset[id] !== false) {
+	                rule.init(parser, reporter$1, ruleset[id]);
+	            }
+	        }
+	        parser.parse(html);
+	        return reporter$1.messages;
+	    };
+	    HTMLHintCore.prototype.format = function (arrMessages, options) {
+	        if (options === void 0) { options = {}; }
+	        var arrLogs = [];
+	        var colors = {
+	            white: '',
+	            grey: '',
+	            red: '',
+	            reset: '',
+	        };
+	        if (options.colors) {
+	            colors.white = '\x1b[37m';
+	            colors.grey = '\x1b[90m';
+	            colors.red = '\x1b[31m';
+	            colors.reset = '\x1b[39m';
+	        }
+	        var indent = options.indent || 0;
+	        arrMessages.forEach(function (hint) {
+	            var leftWindow = 40;
+	            var rightWindow = leftWindow + 20;
+	            var evidence = hint.evidence;
+	            var line = hint.line;
+	            var col = hint.col;
+	            var evidenceCount = evidence.length;
+	            var leftCol = col > leftWindow + 1 ? col - leftWindow : 1;
+	            var rightCol = evidence.length > col + rightWindow ? col + rightWindow : evidenceCount;
+	            if (col < leftWindow + 1) {
+	                rightCol += leftWindow - col + 1;
+	            }
+	            evidence = evidence.replace(/\t/g, ' ').substring(leftCol - 1, rightCol);
+	            if (leftCol > 1) {
+	                evidence = "..." + evidence;
+	                leftCol -= 3;
+	            }
+	            if (rightCol < evidenceCount) {
+	                evidence += '...';
+	            }
+	            arrLogs.push(colors.white + repeatStr(indent) + "L" + line + " |" + colors.grey + evidence + colors.reset);
+	            var pointCol = col - leftCol;
+	            var match = evidence.substring(0, pointCol).match(/[^\u0000-\u00ff]/g);
+	            if (match !== null) {
+	                pointCol += match.length;
+	            }
+	            arrLogs.push(colors.white +
+	                repeatStr(indent) +
+	                repeatStr(String(line).length + 3 + pointCol) + "^ " + colors.red + hint.message + " (" + hint.rule.id + ")" + colors.reset);
+	        });
+	        return arrLogs;
+	    };
+	    return HTMLHintCore;
+	}());
+	function repeatStr(n, str) {
+	    return new Array(n + 1).join(str || ' ');
+	}
+	exports.HTMLHint = new HTMLHintCore();
+	Object.keys(rules).forEach(function (key) {
+	    exports.HTMLHint.addRule(rules[key]);
+	});
+
+	});
+
+	var core$1 = /*@__PURE__*/unwrapExports(core);
+
+	return core$1;
+
+})));
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__("c8ba")))
+
+/***/ }),
+
 /***/ "5a0c":
 /***/ (function(module, exports, __webpack_require__) {
 
 !function(t,e){ true?module.exports=e():undefined}(this,(function(){"use strict";var t=1e3,e=6e4,n=36e5,r="millisecond",i="second",s="minute",u="hour",a="day",o="week",f="month",h="quarter",c="year",d="date",$="Invalid Date",l=/^(\d{4})[-/]?(\d{1,2})?[-/]?(\d{0,2})[Tt\s]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?[.:]?(\d+)?$/,y=/\[([^\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g,M={name:"en",weekdays:"Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"),months:"January_February_March_April_May_June_July_August_September_October_November_December".split("_")},m=function(t,e,n){var r=String(t);return!r||r.length>=e?t:""+Array(e+1-r.length).join(n)+t},g={s:m,z:function(t){var e=-t.utcOffset(),n=Math.abs(e),r=Math.floor(n/60),i=n%60;return(e<=0?"+":"-")+m(r,2,"0")+":"+m(i,2,"0")},m:function t(e,n){if(e.date()<n.date())return-t(n,e);var r=12*(n.year()-e.year())+(n.month()-e.month()),i=e.clone().add(r,f),s=n-i<0,u=e.clone().add(r+(s?-1:1),f);return+(-(r+(n-i)/(s?i-u:u-i))||0)},a:function(t){return t<0?Math.ceil(t)||0:Math.floor(t)},p:function(t){return{M:f,y:c,w:o,d:a,D:d,h:u,m:s,s:i,ms:r,Q:h}[t]||String(t||"").toLowerCase().replace(/s$/,"")},u:function(t){return void 0===t}},D="en",v={};v[D]=M;var p=function(t){return t instanceof _},S=function(t,e,n){var r;if(!t)return D;if("string"==typeof t)v[t]&&(r=t),e&&(v[t]=e,r=t);else{var i=t.name;v[i]=t,r=i}return!n&&r&&(D=r),r||!n&&D},w=function(t,e){if(p(t))return t.clone();var n="object"==typeof e?e:{};return n.date=t,n.args=arguments,new _(n)},O=g;O.l=S,O.i=p,O.w=function(t,e){return w(t,{locale:e.$L,utc:e.$u,x:e.$x,$offset:e.$offset})};var _=function(){function M(t){this.$L=S(t.locale,null,!0),this.parse(t)}var m=M.prototype;return m.parse=function(t){this.$d=function(t){var e=t.date,n=t.utc;if(null===e)return new Date(NaN);if(O.u(e))return new Date;if(e instanceof Date)return new Date(e);if("string"==typeof e&&!/Z$/i.test(e)){var r=e.match(l);if(r){var i=r[2]-1||0,s=(r[7]||"0").substring(0,3);return n?new Date(Date.UTC(r[1],i,r[3]||1,r[4]||0,r[5]||0,r[6]||0,s)):new Date(r[1],i,r[3]||1,r[4]||0,r[5]||0,r[6]||0,s)}}return new Date(e)}(t),this.$x=t.x||{},this.init()},m.init=function(){var t=this.$d;this.$y=t.getFullYear(),this.$M=t.getMonth(),this.$D=t.getDate(),this.$W=t.getDay(),this.$H=t.getHours(),this.$m=t.getMinutes(),this.$s=t.getSeconds(),this.$ms=t.getMilliseconds()},m.$utils=function(){return O},m.isValid=function(){return!(this.$d.toString()===$)},m.isSame=function(t,e){var n=w(t);return this.startOf(e)<=n&&n<=this.endOf(e)},m.isAfter=function(t,e){return w(t)<this.startOf(e)},m.isBefore=function(t,e){return this.endOf(e)<w(t)},m.$g=function(t,e,n){return O.u(t)?this[e]:this.set(n,t)},m.unix=function(){return Math.floor(this.valueOf()/1e3)},m.valueOf=function(){return this.$d.getTime()},m.startOf=function(t,e){var n=this,r=!!O.u(e)||e,h=O.p(t),$=function(t,e){var i=O.w(n.$u?Date.UTC(n.$y,e,t):new Date(n.$y,e,t),n);return r?i:i.endOf(a)},l=function(t,e){return O.w(n.toDate()[t].apply(n.toDate("s"),(r?[0,0,0,0]:[23,59,59,999]).slice(e)),n)},y=this.$W,M=this.$M,m=this.$D,g="set"+(this.$u?"UTC":"");switch(h){case c:return r?$(1,0):$(31,11);case f:return r?$(1,M):$(0,M+1);case o:var D=this.$locale().weekStart||0,v=(y<D?y+7:y)-D;return $(r?m-v:m+(6-v),M);case a:case d:return l(g+"Hours",0);case u:return l(g+"Minutes",1);case s:return l(g+"Seconds",2);case i:return l(g+"Milliseconds",3);default:return this.clone()}},m.endOf=function(t){return this.startOf(t,!1)},m.$set=function(t,e){var n,o=O.p(t),h="set"+(this.$u?"UTC":""),$=(n={},n[a]=h+"Date",n[d]=h+"Date",n[f]=h+"Month",n[c]=h+"FullYear",n[u]=h+"Hours",n[s]=h+"Minutes",n[i]=h+"Seconds",n[r]=h+"Milliseconds",n)[o],l=o===a?this.$D+(e-this.$W):e;if(o===f||o===c){var y=this.clone().set(d,1);y.$d[$](l),y.init(),this.$d=y.set(d,Math.min(this.$D,y.daysInMonth())).$d}else $&&this.$d[$](l);return this.init(),this},m.set=function(t,e){return this.clone().$set(t,e)},m.get=function(t){return this[O.p(t)]()},m.add=function(r,h){var d,$=this;r=Number(r);var l=O.p(h),y=function(t){var e=w($);return O.w(e.date(e.date()+Math.round(t*r)),$)};if(l===f)return this.set(f,this.$M+r);if(l===c)return this.set(c,this.$y+r);if(l===a)return y(1);if(l===o)return y(7);var M=(d={},d[s]=e,d[u]=n,d[i]=t,d)[l]||1,m=this.$d.getTime()+r*M;return O.w(m,this)},m.subtract=function(t,e){return this.add(-1*t,e)},m.format=function(t){var e=this,n=this.$locale();if(!this.isValid())return n.invalidDate||$;var r=t||"YYYY-MM-DDTHH:mm:ssZ",i=O.z(this),s=this.$H,u=this.$m,a=this.$M,o=n.weekdays,f=n.months,h=function(t,n,i,s){return t&&(t[n]||t(e,r))||i[n].substr(0,s)},c=function(t){return O.s(s%12||12,t,"0")},d=n.meridiem||function(t,e,n){var r=t<12?"AM":"PM";return n?r.toLowerCase():r},l={YY:String(this.$y).slice(-2),YYYY:this.$y,M:a+1,MM:O.s(a+1,2,"0"),MMM:h(n.monthsShort,a,f,3),MMMM:h(f,a),D:this.$D,DD:O.s(this.$D,2,"0"),d:String(this.$W),dd:h(n.weekdaysMin,this.$W,o,2),ddd:h(n.weekdaysShort,this.$W,o,3),dddd:o[this.$W],H:String(s),HH:O.s(s,2,"0"),h:c(1),hh:c(2),a:d(s,u,!0),A:d(s,u,!1),m:String(u),mm:O.s(u,2,"0"),s:String(this.$s),ss:O.s(this.$s,2,"0"),SSS:O.s(this.$ms,3,"0"),Z:i};return r.replace(y,(function(t,e){return e||l[t]||i.replace(":","")}))},m.utcOffset=function(){return 15*-Math.round(this.$d.getTimezoneOffset()/15)},m.diff=function(r,d,$){var l,y=O.p(d),M=w(r),m=(M.utcOffset()-this.utcOffset())*e,g=this-M,D=O.m(this,M);return D=(l={},l[c]=D/12,l[f]=D,l[h]=D/3,l[o]=(g-m)/6048e5,l[a]=(g-m)/864e5,l[u]=g/n,l[s]=g/e,l[i]=g/t,l)[y]||g,$?D:O.a(D)},m.daysInMonth=function(){return this.endOf(f).$D},m.$locale=function(){return v[this.$L]},m.locale=function(t,e){if(!t)return this.$L;var n=this.clone(),r=S(t,e,!0);return r&&(n.$L=r),n},m.clone=function(){return O.w(this.$d,this)},m.toDate=function(){return new Date(this.valueOf())},m.toJSON=function(){return this.isValid()?this.toISOString():null},m.toISOString=function(){return this.$d.toISOString()},m.toString=function(){return this.$d.toUTCString()},M}(),b=_.prototype;return w.prototype=b,[["$ms",r],["$s",i],["$m",s],["$H",u],["$W",a],["$M",f],["$y",c],["$D",d]].forEach((function(t){b[t[1]]=function(e){return this.$g(e,t[0],t[1])}})),w.extend=function(t,e){return t.$i||(t(e,_,w),t.$i=!0),w},w.locale=S,w.isDayjs=p,w.unix=function(t){return w(1e3*t)},w.en=v[D],w.Ls=v,w.p={},w}));
+
+/***/ }),
+
+/***/ "5b7c":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ExpiredReport_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("2157");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ExpiredReport_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ExpiredReport_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
 
 /***/ }),
 
@@ -19856,12 +21827,64 @@ exports.parse = function (str) {
 
 /***/ }),
 
+/***/ "7506":
+/***/ (function(module, exports) {
+
+module.exports = {
+    id: 'head-valid-content-model',
+    description: 'The head tag must only contain valid elements.',
+    init(parser, reporter, options) {
+        const tags = Array.isArray(options) ? options : [
+            'base', 'link', 'meta', 'noscript', 'script', 'style', 'template', 'title'
+        ];
+
+        const onTagEnd = event => {
+            if(event.tagName === 'head') {
+                parser.removeListener('tagstart', onChildrenTagStart);
+            }
+        };
+        
+        const onTagStart = event => {
+            if(event.tagName === 'head') {
+                parser.addListener('tagstart', onChildrenTagStart);
+            }
+        };
+
+        const onChildrenTagStart = event => {
+            // Ignore if an approved tag.
+            if(tags.indexOf(event.tagName.toLowerCase()) > -1) {
+                return;
+            }
+
+            reporter.warn(
+                `The [ ${event.tagName} ] tag is not allowed inside the head tag.`,
+                event.line,
+                event.col,
+                this,
+                event.raw
+            );
+        };
+        
+        parser.addListener('tagstart', onTagStart);
+        parser.addListener('tagend', onTagEnd);
+    }
+};
+
+/***/ }),
+
+/***/ "77ed":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "7a3c":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"35d0dc38-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/@vue-interface/activity-indicator/src/types/Spinner.vue?vue&type=template&id=2ee21020&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"54068579-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/@vue-interface/activity-indicator/src/types/Spinner.vue?vue&type=template&id=2ee21020&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"activity-indicator-spinner"},[_c('div',{staticClass:"activity-indicator-spinner1 activity-indicator-spinner"}),_c('div',{staticClass:"activity-indicator-spinner2 activity-indicator-spinner"}),_c('div',{staticClass:"activity-indicator-spinner3 activity-indicator-spinner"}),_c('div',{staticClass:"activity-indicator-spinner4 activity-indicator-spinner"}),_c('div',{staticClass:"activity-indicator-spinner5 activity-indicator-spinner"}),_c('div',{staticClass:"activity-indicator-spinner6 activity-indicator-spinner"}),_c('div',{staticClass:"activity-indicator-spinner7 activity-indicator-spinner"}),_c('div',{staticClass:"activity-indicator-spinner8 activity-indicator-spinner"}),_c('div',{staticClass:"activity-indicator-spinner9 activity-indicator-spinner"}),_c('div',{staticClass:"activity-indicator-spinner10 activity-indicator-spinner"}),_c('div',{staticClass:"activity-indicator-spinner11 activity-indicator-spinner"}),_c('div',{staticClass:"activity-indicator-spinner12 activity-indicator-spinner"})])}]
 
@@ -21267,6 +23290,17 @@ module.exports = function xhrAdapter(config) {
 
 /***/ }),
 
+/***/ "baba":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_css_loader_dist_cjs_js_ref_8_oneOf_1_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_src_index_js_ref_8_oneOf_1_2_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_cache_loader_dist_cjs_js_ref_0_0_vue_loader_lib_index_js_vue_loader_options_Notepad_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("c71e");
+/* harmony import */ var _mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_css_loader_dist_cjs_js_ref_8_oneOf_1_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_src_index_js_ref_8_oneOf_1_2_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_cache_loader_dist_cjs_js_ref_0_0_vue_loader_lib_index_js_vue_loader_options_Notepad_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_css_loader_dist_cjs_js_ref_8_oneOf_1_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_src_index_js_ref_8_oneOf_1_2_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_cache_loader_dist_cjs_js_ref_0_0_vue_loader_lib_index_js_vue_loader_options_Notepad_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
+
+/***/ }),
+
 /***/ "bc3a":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21345,14 +23379,14 @@ __webpack_require__.d(__webpack_exports__, "a", function() { return /* reexport 
 
 // UNUSED EXPORTS: AlertClose
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"35d0dc38-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/@vue-interface/alert/src/Alert.vue?vue&type=template&id=b4a64af6&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"54068579-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/@vue-interface/alert/src/Alert.vue?vue&type=template&id=b4a64af6&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"alert",class:_vm.classes,attrs:{"role":"alert"}},[(_vm.dismissible)?_c('alert-close',{on:{"click":function($event){return _vm.dismiss()}}}):_vm._e(),(_vm.title || _vm.heading)?_c('div',[_vm._v(" "+_vm._s(_vm.title || _vm.heading)+" ")]):_vm._e(),_vm._t("default"),(typeof _vm.show === 'number')?_c('progress-bar',{staticClass:"my-3",attrs:{"variant":_vm.variant,"height":5,"value":_vm.dismissCount,"max":_vm.show}}):_vm._e()],2)}
 var staticRenderFns = []
 
 
 // CONCATENATED MODULE: ./node_modules/@vue-interface/alert/src/Alert.vue?vue&type=template&id=b4a64af6&
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"35d0dc38-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/@vue-interface/alert/src/AlertClose.vue?vue&type=template&id=ce99fd86&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"54068579-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/@vue-interface/alert/src/AlertClose.vue?vue&type=template&id=ce99fd86&
 var AlertClosevue_type_template_id_ce99fd86_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{staticClass:"close",attrs:{"type":"button","data-dismiss":"alert","aria-label":"Close"},on:{"click":_vm.onClick}},[_c('span',{attrs:{"aria-hidden":"true"}},[_vm._v("×")])])}
 var AlertClosevue_type_template_id_ce99fd86_staticRenderFns = []
 
@@ -21412,7 +23446,7 @@ var variant = __webpack_require__("5021");
 // EXTERNAL MODULE: ./node_modules/@vue-interface/utils/index.js + 35 modules
 var utils = __webpack_require__("fb36");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"35d0dc38-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/@vue-interface/progress-bar/src/ProgressBar.vue?vue&type=template&id=c1a93280&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"54068579-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/@vue-interface/progress-bar/src/ProgressBar.vue?vue&type=template&id=c1a93280&
 var ProgressBarvue_type_template_id_c1a93280_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"progress",style:({'height': _vm.formattedHeight})},[_c('div',{staticClass:"progress-bar",class:_vm.classes,style:(_vm.styles),attrs:{"role":"progressbar","aria-valuenow":_vm.offsetValue,"aria-valuemin":_vm.min,"aria-valuemax":_vm.max}},[(!!_vm.label)?_c('span',[(_vm.label !== true)?[_vm._v(" "+_vm._s(_vm.label)+" ")]:_vm._e(),_vm._v(" "+_vm._s(_vm.offsetValue)+"% ")],2):_c('span',[_vm._t("default")],2)])])}
 var ProgressBarvue_type_template_id_c1a93280_staticRenderFns = []
 
@@ -22256,6 +24290,13 @@ module.exports = {
 
 /***/ }),
 
+/***/ "c71e":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "c8af":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22300,6 +24341,13 @@ try {
 
 module.exports = g;
 
+
+/***/ }),
+
+/***/ "ce93":
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"attr-no-duplication\":true,\"head-valid-content-model\":true,\"html-valid-content-model\":true,\"valid-path-format\":[{\"attr\":\"href\",\"formats\":[{\"pattern\":\"\\\\${(\\\\s+)?Gears\\\\.unsubscribe\\\\(\\\\)(\\\\s+)?}\",\"name\":\"MessageGears unsubscribe\"},\"absolute\"]},{\"tag\":\"img\",\"attr\":\"src\",\"formats\":[\"absolute\"]}],\"inline-script-disabled\":true,\"spec-char-escape\":true,\"src-not-empty\":true,\"tag-pair\":true}");
 
 /***/ }),
 
@@ -22368,6 +24416,255 @@ module.exports.default = axios;
 
 /***/ }),
 
+/***/ "d6e7":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"54068579-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/@vue-interface/animate-css/src/AnimateCss.vue?vue&type=template&id=2cfd983d&
+var render = function () {
+var this$1 = this;
+var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('transition',{attrs:{"mode":_vm.mode,"enter-class":_vm.enterClass,"enter-to-class":_vm.enterToClass,"enter-active-class":_vm.enterActiveClassName,"leave-class":_vm.leaveClass,"leave-to-class":_vm.leaveToClass,"leave-active-class":_vm.leaveActiveClassName},on:{"before-enter":function () {
+	var ref;
+
+	var args = [], len = arguments.length;
+	while ( len-- ) args[ len ] = arguments[ len ];
+	return (ref = this$1).$emit.apply(ref, [ 'before-enter' ].concat( args ));
+},"enter":function () {
+	var ref;
+
+	var args = [], len = arguments.length;
+	while ( len-- ) args[ len ] = arguments[ len ];
+	return (ref = this$1).$emit.apply(ref, [ 'enter' ].concat( args ));
+},"after-enter":function () {
+	var ref;
+
+	var args = [], len = arguments.length;
+	while ( len-- ) args[ len ] = arguments[ len ];
+	return (ref = this$1).$emit.apply(ref, [ 'after-enter' ].concat( args ));
+},"before-leave":function () {
+	var ref;
+
+	var args = [], len = arguments.length;
+	while ( len-- ) args[ len ] = arguments[ len ];
+	return (ref = this$1).$emit.apply(ref, [ 'before-leave' ].concat( args ));
+},"leave":function () {
+	var ref;
+
+	var args = [], len = arguments.length;
+	while ( len-- ) args[ len ] = arguments[ len ];
+	return (ref = this$1).$emit.apply(ref, [ 'leave' ].concat( args ));
+},"after-leave":function () {
+	var ref;
+
+	var args = [], len = arguments.length;
+	while ( len-- ) args[ len ] = arguments[ len ];
+	return (ref = this$1).$emit.apply(ref, [ 'after-leave' ].concat( args ));
+}}},[_vm._t("default")],2)}
+var staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./node_modules/@vue-interface/animate-css/src/AnimateCss.vue?vue&type=template&id=2cfd983d&
+
+// EXTERNAL MODULE: ./node_modules/animate.css/animate.css
+var animate = __webpack_require__("77ed");
+
+// EXTERNAL MODULE: ./node_modules/@vue-interface/utils/index.js + 35 modules
+var utils = __webpack_require__("fb36");
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/@vue-interface/animate-css/src/AnimateCss.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+/* harmony default export */ var AnimateCssvue_type_script_lang_js_ = ({
+
+    props: {
+
+        delay: [String, Number, Function],
+
+        duration: [String, Number, Function],
+        
+        mode: String,
+
+        enter: String,
+
+        enterClass: String,
+
+        leave: String,
+
+        enterToClass: String,
+
+        enterActiveClass: String,
+        
+        leaveClass: String,
+
+        leaveToClass: String,
+
+        leaveActiveClass: String,
+
+        x: Boolean,
+
+        y: Boolean,
+
+        big: Boolean,
+
+        up: Boolean,
+
+        down: Boolean,
+
+        left: Boolean,
+
+        right: Boolean,
+
+        animated: {
+            type: Boolean,
+            default: true
+        },
+
+        name: String,
+
+        direction: {
+            type: String,
+            default() {
+                return (
+                    this.x && 'x' ||
+                    this.y && 'y' ||
+                    this.up && 'up' ||
+                    this.down && 'down' ||
+                    this.left && 'left' ||
+                    this.right && 'right'
+                ) || undefined;
+            },
+            validate(value) {
+                return ['up', 'down', 'left', 'right'].indexOf(value.toLowerCase()) !== -1;
+            }
+        },
+
+        directionEffects: {
+            type: Array,
+            default: () => ([
+                'back',
+                'bounce',
+                'fade',
+                'flip',
+                'lightspeed',
+                'rotate',
+                'roll',
+                'slide',
+                'zoom'
+            ])
+        },
+
+        special: {
+            type: Boolean,
+            default() {
+                return this.name && this.directionEffects.indexOf(this.name.toLowerCase()) === -1;
+            }
+        }
+
+    },
+
+    computed: {
+
+        enterActiveClassName() {
+            return this.enter && `${this.enter} ${this.animated && 'animated'}` || 
+                this.activeClass('in', this.enterActiveClass);
+        },
+
+        leaveActiveClassName() {
+            return this.leave && `${this.leave} ${this.animated && 'animated'}` || 
+                this.activeClass('out', this.leaveActiveClass);
+        }
+
+    },
+
+    updated() {
+        if(this.$slots.default && this.$slots.default.length) {
+            const [{ elm }] = this.$slots.default;
+
+            for(let attr of ['duration', 'delay']) {
+                const value = this[attr] instanceof Function
+                    ? this[attr]()
+                    : this[attr];
+                
+                elm.style[Object(utils["a" /* camelCase */])(`animation_${attr}`)] = value;
+            }
+        }
+    },
+
+    methods: {
+
+        activeClass(key, ...classes) {
+            return [
+                'animate__' + Object(utils["a" /* camelCase */])([
+                    this.name,
+                    !this.special && key,
+                    this.direction,
+                    this.big && 'big'
+                ].filter(value => !!value).join(' '))
+            ]
+                .concat([
+                    this.animated && 'animate__animated'
+                ])
+                .concat(classes)
+                .join(' ');
+        }        
+
+    }
+
+});
+
+// CONCATENATED MODULE: ./node_modules/@vue-interface/animate-css/src/AnimateCss.vue?vue&type=script&lang=js&
+ /* harmony default export */ var src_AnimateCssvue_type_script_lang_js_ = (AnimateCssvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__("2877");
+
+// CONCATENATED MODULE: ./node_modules/@vue-interface/animate-css/src/AnimateCss.vue
+
+
+
+
+
+/* normalize component */
+
+var component = Object(componentNormalizer["a" /* default */])(
+  src_AnimateCssvue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var AnimateCss = (component.exports);
+// CONCATENATED MODULE: ./node_modules/@vue-interface/animate-css/index.js
+
+/* harmony default export */ var animate_css = __webpack_exports__["a"] = (AnimateCss);
+
+/***/ }),
+
 /***/ "d925":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22387,6 +24684,320 @@ module.exports = function isAbsoluteURL(url) {
   return /^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url);
 };
 
+
+/***/ }),
+
+/***/ "dcd0":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"54068579-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/vue-notepad/src/Notepad.vue?vue&type=template&id=0f97e36c&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"notepad",class:{ editable: _vm.editable },on:{"click":_vm.onClickContainer}},[_c(this.component(_vm.header),{directives:[{name:"component-model",rawName:"v-component-model",value:(_vm.form.header),expression:"form.header"},{name:"autogrow",rawName:"v-autogrow",value:(_vm.header && _vm.editable),expression:"header && editable"}],ref:"header",tag:"component",staticClass:"notepad-header"},[_vm._t("header")],2),_c('div',{staticClass:"notepad-lines"},[_c(this.component(_vm.body),{directives:[{name:"component-model",rawName:"v-component-model",value:(_vm.form.body),expression:"form.body"},{name:"autogrow",rawName:"v-autogrow",value:(_vm.body && _vm.editable),expression:"body && editable"}],ref:"body",tag:"component",staticClass:"notepad-body"},[_vm._t("default")],2)],1),_c(this.component(_vm.footer),{directives:[{name:"component-model",rawName:"v-component-model",value:(_vm.form.footer),expression:"form.footer"},{name:"autogrow",rawName:"v-autogrow",value:(_vm.footer && _vm.editable),expression:"footer && editable"}],ref:"footer",tag:"component",staticClass:"notepad-footer"},[_vm._t("footer")],2)],1)}
+var staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./node_modules/vue-notepad/src/Notepad.vue?vue&type=template&id=0f97e36c&
+
+// CONCATENATED MODULE: ./node_modules/vue-interface/src/Directives/Autogrow/Autogrow.js
+const STYLE_ATTRIBUTES = [
+    'font',
+    'fontFamily',
+    'fontKerning',
+    'fontSize',
+    'fontStretch',
+    'fontStyle',
+    'fontVariant',
+    'fontVariantLigatures',
+    'fontVariantCaps',
+    'fontVariantNumeric',
+    'fontVariantEastAsian',
+    'fontWeight',
+    'lineHeight',
+    'letterSpacing',
+    'padding',
+    'margin',
+    'textAlign',
+    'textAlignLast',
+    'textDecoration',
+    'textDecorationLine',
+    'textDecorationStyle',
+    'textDecorationColor',
+    'textDecorationSkipInk',
+    'textDecorationPosition',
+    'textIndent',
+    'textRendering',
+    'textShadow',
+    'textSizeAdjust',
+    'textOverflow',
+    'textTransform',
+    'width',
+    'wordBreak',
+    'wordSpacing',
+    'wordWrap'
+];
+
+function Autogrow_escape(html) {
+    const el = document.createElement('textarea');    
+    el.textContent = html;
+    return el.innerHTML;
+}
+
+function Autogrow_unescape(html) {
+    const el = document.createElement('textarea');
+    el.innerHTML = html;
+    return el.textContent;
+}
+
+function Autogrow_int(str) {
+    if(typeof str === 'number') {
+        return str;
+    }
+    else if(!str || !str.replace) {
+        return 0;
+    }
+    
+    return parseInt(str.replace(/[^\d.]+/g, '')) || 0;
+}
+
+function input(div, el, minHeight, maxHeight) {
+    div.innerHTML = Autogrow_escape(el.value).replace(/(?:\r\n|\r|\n)/g, '<br />') + '&nbsp;';
+
+    let dynamicHeight = Math.max(minHeight, height(div));
+  
+    if(div.innerHTML.match(/(<br\s?\/?\>)+/)) {
+        dynamicHeight += Autogrow_int(style(el, 'lineHeight'));
+    }
+
+    el.style.height = (
+        (!maxHeight || dynamicHeight < maxHeight) ? dynamicHeight : maxHeight
+    ) + 'px';
+}
+
+function height(el) {
+    return Autogrow_int(style(el, 'height'));
+}
+
+function style(el, attr) {
+    return window.getComputedStyle(el)[attr];
+}
+
+function mimic(el, minHeight) {
+    const div = document.createElement('div');
+    const styles = window.getComputedStyle(el);
+
+    div.style.position = 'absolute';
+    div.style.zIndex = -1;
+    div.style.visibility = 'hidden';
+    // div.style.minHeight = `${minHeight}px`;
+    
+    el.parentNode.insertBefore(div, el.nextSibling);
+
+    STYLE_ATTRIBUTES.forEach(key => div.style[key] = styles[key]);
+
+    return div;
+}
+
+function init(el, binding, vnode) {
+    const minHeight = height(el);
+    const div = mimic(el, minHeight);
+    const maxHeight = binding.value !== true ? binding.value : 0;
+
+    el.addEventListener('input', event => {
+        input(div, event.target, minHeight, maxHeight);
+    });
+
+    input(div, el, minHeight, maxHeight);
+
+    return;
+}
+
+/* harmony default export */ var Autogrow = ({
+    
+    inserted(el, binding, vnode) {
+        const elm = el;
+
+        if(binding.value === false) {
+            return;
+        }
+
+        if(el.tagName !== 'TEXTAREA') {
+            el = el.querySelector('textarea');
+        }
+
+        if(!el) {
+            throw new Error('A textarea is required for the v-autogrow directive.');
+        }
+        
+        init(el, binding, vnode);
+
+        el.resize = function() {
+            vnode.context.$nextTick(() => {
+                el.dispatchEvent(new Event('input'));
+            });
+        };
+    }
+
+});
+
+// CONCATENATED MODULE: ./node_modules/vue-interface/src/Directives/Autogrow/index.js
+
+/* harmony default export */ var Directives_Autogrow = (Autogrow);
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/vue-notepad/src/Notepad.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ var Notepadvue_type_script_lang_js_ = ({
+
+    props: {
+        
+        editable: Boolean,
+
+        header: {
+            type: Boolean, 
+            default: true
+        },
+
+        body: {
+            type: Boolean, 
+            default: true
+        },
+
+        footer: {
+            type: Boolean, 
+            default: true
+        }
+
+    },
+
+    directives: {
+        Autogrow: Directives_Autogrow,
+        componentModel: {
+            inserted(el, binding, vnode) {
+                const parts = binding.expression.split('.');
+                const varName = parts.pop();
+                const context = parts.reduce((carry, value) => {
+                    return carry[value]
+                }, vnode.context);
+
+                el.addEventListener('input', e => {
+                    vnode.context.$set(context, varName, e.target.value);
+                });
+
+                el.value = (vnode.children || []).map(slot => {
+                    return slot.elm.outerHTML || slot.elm.textContent;
+                })
+                .join("\n");
+                
+                vnode.context.$set(context, varName, el.value);
+            }
+        }
+    },
+
+    watch: {
+
+        form: {
+            deep: true,
+            handler(value) {
+                this.$emit('input', this.form);
+            }
+        }
+
+    },
+
+    methods: {
+        
+        component(value) {
+            return value && this.editable ? 'textarea' : 'div';
+        },
+        
+        onClickContainer() {
+            if(this.$refs.body && this.editable) {
+                // this.$refs.body.focus();
+            }
+        }
+
+    },
+
+    data() {
+        return {
+            form: {
+                header: null,
+                body: null,
+                footer: null
+            }
+        }
+    }
+
+});
+
+// CONCATENATED MODULE: ./node_modules/vue-notepad/src/Notepad.vue?vue&type=script&lang=js&
+ /* harmony default export */ var src_Notepadvue_type_script_lang_js_ = (Notepadvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/vue-notepad/src/Notepad.vue?vue&type=style&index=0&lang=scss&
+var Notepadvue_type_style_index_0_lang_scss_ = __webpack_require__("baba");
+
+// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__("2877");
+
+// CONCATENATED MODULE: ./node_modules/vue-notepad/src/Notepad.vue
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(componentNormalizer["a" /* default */])(
+  src_Notepadvue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var Notepad = (component.exports);
+// CONCATENATED MODULE: ./node_modules/vue-notepad/src/index.js
+
+
+/* harmony default export */ var src = __webpack_exports__["a"] = (Notepad);
 
 /***/ }),
 
@@ -22742,7 +25353,7 @@ var substr = 'ab'.substr(-1) === 'b'
 
 "use strict";
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"35d0dc38-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/@vue-interface/activity-indicator/src/ActivityIndicator.vue?vue&type=template&id=2aa3d6b4&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"54068579-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/@vue-interface/activity-indicator/src/ActivityIndicator.vue?vue&type=template&id=2aa3d6b4&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"activity-indicator",class:_vm.classes,style:(_vm.style)},[_c('div',{staticClass:"activity-indicator-content"},[_c(_vm.component,{tag:"component",staticClass:"mx-auto"}),(_vm.label)?_c('div',{staticClass:"activity-indicator-label"},[_vm._v(" "+_vm._s(_vm.label)+" ")]):_vm._e()],1)])}
 var staticRenderFns = []
 
@@ -26023,12 +28634,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"35d0dc38-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/ErrorReport.vue?vue&type=template&id=4dac1b38&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('router-view',{attrs:{"content":_vm.content,"filename":_vm.filename,"signed-url":_vm.signedUrl}})}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"54068579-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/ErrorReport.vue?vue&type=template&id=1387ea2b&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (!_vm.isExpired)?_c('router-view',{attrs:{"content":_vm.content,"filename":_vm.filename,"signed-url":_vm.signedUrl}}):_c('expired-report',[_vm._v(" test ")])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/ErrorReport.vue?vue&type=template&id=4dac1b38&
+// CONCATENATED MODULE: ./src/ErrorReport.vue?vue&type=template&id=1387ea2b&
 
 // EXTERNAL MODULE: ./node_modules/axios/index.js
 var axios = __webpack_require__("bc3a");
@@ -31835,7 +34446,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var App = (component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"35d0dc38-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/capsule-common/src/Components/ForgotPasswordForm.vue?vue&type=template&id=2bd5a301&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"54068579-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/capsule-common/src/Components/ForgotPasswordForm.vue?vue&type=template&id=2bd5a301&
 var ForgotPasswordFormvue_type_template_id_2bd5a301_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('form',{on:{"submit":function($event){$event.preventDefault();return _vm.onSubmit.apply(null, arguments)}}},[_c('input-field',{attrs:{"id":"email","type":"email","errors":_vm.errors,"size":_vm.size,"name":"email","label":"Email","placeholder":"Email","custom":""},model:{value:(_vm.form.email),callback:function ($$v) {_vm.$set(_vm.form, "email", $$v)},expression:"form.email"}}),_c('btn-activity',{attrs:{"indicator":"spinner","activity":_vm.activity,"size":_vm.size,"block":""}},[_vm._v(" Send Reset Email ")]),_vm._t("default")],2)}
 var ForgotPasswordFormvue_type_template_id_2bd5a301_staticRenderFns = []
 
@@ -31959,7 +34570,7 @@ var ForgotPasswordForm_component = Object(componentNormalizer["a" /* default */]
 )
 
 /* harmony default export */ var ForgotPasswordForm = (ForgotPasswordForm_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"35d0dc38-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/capsule-common/src/Components/LoginForm.vue?vue&type=template&id=19632b1c&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"54068579-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/capsule-common/src/Components/LoginForm.vue?vue&type=template&id=19632b1c&
 var LoginFormvue_type_template_id_19632b1c_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('form',{staticClass:"login-form",on:{"submit":function($event){$event.preventDefault();return _vm.onSubmit.apply(null, arguments)}}},[_vm._t("header"),_c('input-field',{attrs:{"id":"email","type":"email","errors":_vm.errors,"size":_vm.size,"name":"email","label":"Email","placeholder":"Email","custom":""},model:{value:(_vm.form.email),callback:function ($$v) {_vm.$set(_vm.form, "email", $$v)},expression:"form.email"}}),_c('input-field',{attrs:{"id":"password","errors":_vm.errors,"type":"password","size":_vm.size,"name":"password","label":"Password","placeholder":"Password","custom":""},model:{value:(_vm.form.password),callback:function ($$v) {_vm.$set(_vm.form, "password", $$v)},expression:"form.password"}}),_c('btn-activity',{attrs:{"indicator":"spinner","activity":_vm.activity,"size":_vm.size,"block":""}},[_vm._v(" Login ")]),_vm._t("default")],2)}
 var LoginFormvue_type_template_id_19632b1c_staticRenderFns = []
 
@@ -32093,7 +34704,7 @@ var LoginForm_component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var LoginForm = (LoginForm_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"35d0dc38-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/capsule-common/src/Components/SingleSignOnForm.vue?vue&type=template&id=5d4f7ea0&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"54068579-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/capsule-common/src/Components/SingleSignOnForm.vue?vue&type=template&id=5d4f7ea0&
 var SingleSignOnFormvue_type_template_id_5d4f7ea0_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('form',{staticClass:"redirect-form",on:{"submit":function($event){$event.preventDefault();return _vm.onSubmit.apply(null, arguments)}}},[_vm._t("header"),_c('div',{staticClass:"bg-light p-3 mb-3 rounded d-flex"},[_c('font-awesome-icon',{staticClass:"mr-3",staticStyle:{"color":"#449AD6"},attrs:{"icon":['fab', 'salesforce'],"size":"4x"}}),_c('div',{staticClass:"font-lg"},[_vm._v("You must have a Salesforce account with Active Engagement to login. Clicking the login button will redirect you to Salesforce.")])],1),(_vm.errors && Object.entries(_vm.errors).length)?_c('alert',{staticClass:"mt-3",attrs:{"variant":"danger"}},_vm._l((_vm.errors),function(error){return _c('div',{key:error.join('.'),domProps:{"innerHTML":_vm._s(error.join('<br>'))}})}),0):_vm._e(),_c('btn-activity',{ref:"button",attrs:{"indicator":"spinner","activity":_vm.activity,"size":_vm.size,"block":""}},[_c('font-awesome-icon',{staticClass:"mr-2",attrs:{"icon":['fab', 'salesforce']}}),_vm._v(" Login with Salesforce ")],1),_vm._t("default")],2)}
 var SingleSignOnFormvue_type_template_id_5d4f7ea0_staticRenderFns = []
 
@@ -38006,22 +40617,108 @@ external_commonjs_vue_commonjs2_vue_root_Vue_default.a.use(vue_router_esm);
   base: "http://thecapsule.email/dist/",
   routes: [{
     path: '/',
-    component: () => Promise.all(/* import() | home */[__webpack_require__.e(0), __webpack_require__.e(8)]).then(__webpack_require__.bind(null, "be29")),
+    component: () => __webpack_require__.e(/* import() | home */ 7).then(__webpack_require__.bind(null, "be29")),
     children: [{
       path: '',
       name: 'home',
-      component: () => Promise.all(/* import() | bug-report */[__webpack_require__.e(0), __webpack_require__.e(1), __webpack_require__.e(9), __webpack_require__.e(4)]).then(__webpack_require__.bind(null, "9728"))
+      component: () => Promise.all(/* import() | bug-report */[__webpack_require__.e(0), __webpack_require__.e(3)]).then(__webpack_require__.bind(null, "9728"))
     }, {
       path: '/contact',
       name: 'contact',
-      component: () => Promise.all(/* import() | contact-form */[__webpack_require__.e(0), __webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(11), __webpack_require__.e(6)]).then(__webpack_require__.bind(null, "751c"))
+      component: () => Promise.all(/* import() | contact-form */[__webpack_require__.e(0), __webpack_require__.e(1), __webpack_require__.e(5)]).then(__webpack_require__.bind(null, "751c"))
     }]
   }, {
     path: '/fix',
     name: 'fix',
-    component: () => Promise.all(/* import() | editor */[__webpack_require__.e(0), __webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(12), __webpack_require__.e(7)]).then(__webpack_require__.bind(null, "07d4"))
+    component: () => Promise.all(/* import() | editor */[__webpack_require__.e(0), __webpack_require__.e(1), __webpack_require__.e(9), __webpack_require__.e(6)]).then(__webpack_require__.bind(null, "07d4"))
   }]
 }));
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"54068579-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/Components/ExpiredReport.vue?vue&type=template&id=b9b22548&
+var ExpiredReportvue_type_template_id_b9b22548_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"container"},[_c('div',{staticClass:"bug-report mt-5"},[_c('animate-css',{attrs:{"name":"fade","delay":".6666s"}},[(_vm.mounted)?_c('notepad',{staticClass:"mt-5",scopedSlots:_vm._u([{key:"header",fn:function(){return [_c('div',{staticClass:"d-flex justify-content-center"},[_c('div',{staticClass:"text-center"},[_c('img',{staticClass:"img-fluid img-header",attrs:{"src":__webpack_require__("16fe")}})])])]},proxy:true}],null,false,3818373381)},[_c('br'),_vm._v(" This error report has expired. Please contact the person that sent this report to you if you would like to fix the original document. ")]):_vm._e()],1)],1)])}
+var ExpiredReportvue_type_template_id_b9b22548_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/Components/ExpiredReport.vue?vue&type=template&id=b9b22548&
+
+// EXTERNAL MODULE: ./node_modules/@vue-interface/animate-css/index.js + 5 modules
+var animate_css = __webpack_require__("d6e7");
+
+// EXTERNAL MODULE: ./node_modules/capsule-lint/index.js + 1 modules
+var capsule_lint = __webpack_require__("3699");
+
+// EXTERNAL MODULE: ./node_modules/vue-notepad/src/index.js + 7 modules
+var vue_notepad_src = __webpack_require__("dcd0");
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/Components/ExpiredReport.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ var ExpiredReportvue_type_script_lang_js_ = ({
+  components: {
+    AnimateCss: animate_css["a" /* default */],
+    Notepad: vue_notepad_src["a" /* default */]
+  },
+
+  data() {
+    return {
+      mounted: false
+    };
+  },
+
+  mounted() {
+    this.mounted = true;
+  }
+
+});
+// CONCATENATED MODULE: ./src/Components/ExpiredReport.vue?vue&type=script&lang=js&
+ /* harmony default export */ var Components_ExpiredReportvue_type_script_lang_js_ = (ExpiredReportvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./src/Components/ExpiredReport.vue?vue&type=style&index=0&lang=scss&
+var ExpiredReportvue_type_style_index_0_lang_scss_ = __webpack_require__("5b7c");
+
+// CONCATENATED MODULE: ./src/Components/ExpiredReport.vue
+
+
+
+
+
+
+/* normalize component */
+
+var ExpiredReport_component = Object(componentNormalizer["a" /* default */])(
+  Components_ExpiredReportvue_type_script_lang_js_,
+  ExpiredReportvue_type_template_id_b9b22548_render,
+  ExpiredReportvue_type_template_id_b9b22548_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var ExpiredReport = (ExpiredReport_component.exports);
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/ErrorReport.vue?vue&type=script&lang=js&
 //
 //
@@ -38030,6 +40727,11 @@ external_commonjs_vue_commonjs2_vue_root_Vue_default.a.use(vue_router_esm);
 //
 //
 //
+//
+//
+//
+//
+
 
 
 
@@ -38039,7 +40741,7 @@ external_commonjs_vue_commonjs2_vue_root_Vue_default.a.use(vue_router_esm);
 external_commonjs_vue_commonjs2_vue_root_Vue_default.a.use(AxiosDefaults, {
   axios: axios_default.a,
   id: 'capsule-browser-extension',
-  version: "0.9.24"
+  version: "1.0.0-beta.0"
 });
 notifier_default.a.start({
   apiKey: "e3e7ea08726960b17b6af58ac061fffd",
@@ -38047,8 +40749,12 @@ notifier_default.a.start({
   enabledReleaseStages: ("staging,production" || false).split(',').map(value => value.trim())
 });
 /* harmony default export */ var ErrorReportvue_type_script_lang_js_ = ({
+  components: {
+    ExpiredReport: ExpiredReport
+  },
   router: router,
   props: {
+    expiresAt: String,
     filename: {
       type: String,
       required: true
@@ -38061,6 +40767,10 @@ notifier_default.a.start({
   computed: {
     content() {
       return this.getSlotContents();
+    },
+
+    isExpired() {
+      return new Date(this.expiresAt).getTime() > new Date().getTime();
     }
 
   },
@@ -38976,6 +41686,113 @@ exports.install = function (handle) {
   };
 };
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__("c8ba")))
+
+/***/ }),
+
+/***/ "fd7f":
+/***/ (function(module, exports) {
+
+const regex = {
+    'absolute': /^https?:\/\//,
+    'relative': /^\w+?:/
+};
+
+class Pattern {
+    constructor(options) {
+        const { name, pattern } =Object.assign({
+            pattern: null,
+            name: null
+        }, typeof options === 'object' ? options : {
+            pattern: options
+        });
+
+        this.name = name || pattern;
+        this.pattern = pattern;
+        this.regex = regex[pattern] || new RegExp(pattern);
+    }
+
+    test(value) {
+        return this.regex.test(value);
+    }
+
+    error(event, attr) {
+        return new MatchError(this, event, attr);
+    }
+}
+
+class MatchError extends Error {
+    constructor(pattern, event, attr) {
+        super();
+
+        this.message = `The value of the href attribute [ ${attr.value} ] must follow the ${pattern.name} format.`;        
+        this.name = pattern.name;
+        this.line = event.line;
+        this.col = event.col + event.tagName.length + 1 + attr.index;
+    }
+}
+
+class ReporterError extends Error {
+    
+    constructor(event, errors, attr) {
+        super(errors.length === 1 ? errors[0].message : (
+            `The value of the href attribute [ ${attr.value} ] must one of the following formats: ${errors.map(event => `"${event.name}"`).join(', ')}.`
+        ));
+
+        this.line = event.line;
+        this.col = event.col + event.tagName.length + 1 + attr.index;
+    }
+    
+}
+function test(patterns, event, attr) {
+    const errors = [];
+
+    for(const [i, pattern] of Object.entries(patterns)) {
+        if(pattern.test(attr.value)) {
+            return true;
+        }
+        
+        errors.push(pattern.error(event, attr));
+    }
+
+    throw new ReporterError(event, errors, attr);
+}
+
+module.exports = {
+    id: 'valid-path-format',
+    description: 'The href attribute must be a valid format.',
+    init(parser, reporter, options) {
+        options = Array.isArray(options) ? options : [];
+
+        parser.addListener('tagstart', (event) => {
+            options.forEach(config => {
+                config = Object.assign({
+                    formats: []
+                }, config || {});
+        
+                const patterns = config.formats.map(pattern => new Pattern(pattern));
+        
+                if(!config.tag || config.tag === event.tagName) {
+                    event.attrs.forEach(attr => {
+                        if(!config.attr || config.attr === attr.name) {
+                            try {
+                                test(patterns, event, attr);
+                            }
+                            catch (e) {
+                                reporter.error(
+                                    e.message,
+                                    e.line,
+                                    e.col,
+                                    this,
+                                    attr.raw
+                                );
+                            }
+                        }
+                    });
+                }
+            });
+        });
+    }
+};
 
 /***/ })
 

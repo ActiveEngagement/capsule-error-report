@@ -1,4 +1,4 @@
-((typeof self !== 'undefined' ? self : this)["webpackJsonpCapsuleErrorReport"] = (typeof self !== 'undefined' ? self : this)["webpackJsonpCapsuleErrorReport"] || []).push([[7],{
+((typeof self !== 'undefined' ? self : this)["webpackJsonpCapsuleErrorReport"] = (typeof self !== 'undefined' ? self : this)["webpackJsonpCapsuleErrorReport"] || []).push([[6],{
 
 /***/ "01f6":
 /***/ (function(module, exports, __webpack_require__) {
@@ -14,7 +14,7 @@
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"35d0dc38-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/Views/Editor.vue?vue&type=template&id=5adc553c&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"54068579-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/Views/Editor.vue?vue&type=template&id=5adc553c&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('capsule-editor',{ref:"editor",attrs:{"content":_vm.content,"disable-filename":"","filename":_vm.filename},scopedSlots:_vm._u([{key:"success",fn:function(ref){
 var close = ref.close;
 var isShowing = ref.isShowing;
@@ -82,7 +82,7 @@ function revision(signedUrl, data = {}, options) {
 // CONCATENATED MODULE: ./src/Helpers/Functions/zip.js
 function zip(contents, filename) {
   return new Promise((resolve, reject) => {
-    __webpack_require__.e(/* import() */ 13).then(__webpack_require__.t.bind(null, "c4e3", 7)).then(module => {
+    __webpack_require__.e(/* import() */ 10).then(__webpack_require__.t.bind(null, "c4e3", 7)).then(module => {
       var zip = new module.default();
       zip.folder(filename.replace(/\.html$/, '')).file(filename, contents);
       zip.generateAsync({
@@ -218,7 +218,7 @@ index_es["c" /* library */].add(free_solid_svg_icons_index_es["b" /* faCheckCirc
 /* harmony default export */ var Editorvue_type_script_lang_js_ = ({
   components: {
     AnimateCss: animate_css["a" /* default */],
-    CapsuleEditor: () => Promise.all(/* import() | capsule-editor */[__webpack_require__.e(10), __webpack_require__.e(5)]).then(__webpack_require__.bind(null, "026f")),
+    CapsuleEditor: () => Promise.all(/* import() | capsule-editor */[__webpack_require__.e(8), __webpack_require__.e(4)]).then(__webpack_require__.bind(null, "026f")),
     Btn: btn["a" /* default */],
     FontAwesomeIcon: vue_fontawesome_index_es["a" /* FontAwesomeIcon */],
     Hourglass: src["a" /* default */],
@@ -382,7 +382,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 "use strict";
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"35d0dc38-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/Components/HttpException.vue?vue&type=template&id=cd66729c&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"54068579-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/Components/HttpException.vue?vue&type=template&id=cd66729c&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"http-exception",class:{ fixed: _vm.fixed }},[_c('div',{staticClass:"d-flex flex-column justify-content-center align-items-center w-100 h-100"},[_c('div',{staticClass:"http-exception-content my-5"},[_c('div',{staticClass:"text-center mx-5 mb-3 p-4"},[_c('icon',{attrs:{"icon":"bomb","size":"6x"}})],1),_c('h1',{staticClass:"font-weight-light mb-4"},[_vm._v(" Something went wrong.... ")]),_c('alert',[_c('h4',{staticClass:"font-weight-light m-3"},[_vm._v(" "+_vm._s(_vm.error)+" ")]),_c('ul',{staticClass:"mt-3"},[_vm._l((_vm.error.response.data.errors),function(errors){return _vm._l((errors),function(row,i){return _c('li',{key:i},[_c('h5',[_vm._v(_vm._s(row))])])})})],2)]),_vm._t("default")],2)])])}
 var staticRenderFns = []
 
