@@ -1,22 +1,18 @@
 ((typeof self !== 'undefined' ? self : this)["webpackJsonpCapsuleErrorReport"] = (typeof self !== 'undefined' ? self : this)["webpackJsonpCapsuleErrorReport"] || []).push([[0],{
 
-/***/ "253b":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "77ed":
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-/* harmony import */ var _mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_css_loader_dist_cjs_js_ref_8_oneOf_1_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_src_index_js_ref_8_oneOf_1_2_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_cache_loader_dist_cjs_js_ref_0_0_vue_loader_lib_index_js_vue_loader_options_AnimateCss_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("714b");
-/* harmony import */ var _mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_css_loader_dist_cjs_js_ref_8_oneOf_1_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_src_index_js_ref_8_oneOf_1_2_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_cache_loader_dist_cjs_js_ref_0_0_vue_loader_lib_index_js_vue_loader_options_AnimateCss_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_css_loader_dist_cjs_js_ref_8_oneOf_1_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_src_index_js_ref_8_oneOf_1_2_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_cache_loader_dist_cjs_js_ref_0_0_vue_loader_lib_index_js_vue_loader_options_AnimateCss_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_css_loader_dist_cjs_js_ref_8_oneOf_1_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_src_index_js_ref_8_oneOf_1_2_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_cache_loader_dist_cjs_js_ref_0_0_vue_loader_lib_index_js_vue_loader_options_AnimateCss_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
-/***/ "566e":
+/***/ "d6e7":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"762c4e38-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/vue-interface/src/Components/AnimateCss/AnimateCss.vue?vue&type=template&id=46781450&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"35d0dc38-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/@vue-interface/animate-css/src/AnimateCss.vue?vue&type=template&id=2cfd983d&
 var render = function () {
 var this$1 = this;
 var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('transition',{attrs:{"mode":_vm.mode,"enter-class":_vm.enterClass,"enter-to-class":_vm.enterToClass,"enter-active-class":_vm.enterActiveClassName,"leave-class":_vm.leaveClass,"leave-to-class":_vm.leaveToClass,"leave-active-class":_vm.leaveActiveClassName},on:{"before-enter":function () {
@@ -59,12 +55,15 @@ var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('transi
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./node_modules/vue-interface/src/Components/AnimateCss/AnimateCss.vue?vue&type=template&id=46781450&
+// CONCATENATED MODULE: ./node_modules/@vue-interface/animate-css/src/AnimateCss.vue?vue&type=template&id=2cfd983d&
 
-// EXTERNAL MODULE: ./node_modules/vue-interface/src/Helpers/Functions/camelCase.js
-var camelCase = __webpack_require__("fea0");
+// EXTERNAL MODULE: ./node_modules/animate.css/animate.css
+var animate = __webpack_require__("77ed");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/vue-interface/src/Components/AnimateCss/AnimateCss.vue?vue&type=script&lang=js&
+// EXTERNAL MODULE: ./node_modules/@vue-interface/utils/index.js + 35 modules
+var utils = __webpack_require__("fb36");
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/@vue-interface/animate-css/src/AnimateCss.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -84,6 +83,7 @@ var camelCase = __webpack_require__("fea0");
 //
 //
 //
+
 
 
 
@@ -154,6 +154,7 @@ var camelCase = __webpack_require__("fea0");
         directionEffects: {
             type: Array,
             default: () => ([
+                'back',
                 'bounce',
                 'fade',
                 'flip',
@@ -197,37 +198,16 @@ var camelCase = __webpack_require__("fea0");
                     ? this[attr]()
                     : this[attr];
                 
-                elm.style[Object(camelCase["a" /* default */])(`animation_${attr}`)] = value;
+                elm.style[Object(utils["a" /* camelCase */])(`animation_${attr}`)] = value;
             }
         }
-        
-        /*
-        const duration = this.duration instanceof Function ? this.duration() : this.duration;
-
-        if(duration && this.$slots.default && this.$slots.default.length) {
-            const el = this.$slots.default[0].elm;
-            
-            if(el.style.animationDuration !== duration) {
-                el.style.animationDuration = duration;
-            }
-        }
-        const delay = this.delay instanceof Function ? this.delay() : this.delay;
-
-        if(delay && this.$slots.default && this.$slots.default.length) {
-            const el = this.$slots.default[0].elm;
-            
-            if(el.style.animationDelay !== delay) {
-                el.style.animationDelay = delay;
-            }
-        }
-        */
     },
 
     methods: {
 
         activeClass(key, ...classes) {
             return [
-                Object(camelCase["a" /* default */])([
+                'animate__' + Object(utils["a" /* camelCase */])([
                     this.name,
                     !this.special && key,
                     this.direction,
@@ -235,7 +215,7 @@ var camelCase = __webpack_require__("fea0");
                 ].filter(value => !!value).join(' '))
             ]
                 .concat([
-                    this.animated && 'animated'
+                    this.animated && 'animate__animated'
                 ])
                 .concat(classes)
                 .join(' ');
@@ -245,16 +225,12 @@ var camelCase = __webpack_require__("fea0");
 
 });
 
-// CONCATENATED MODULE: ./node_modules/vue-interface/src/Components/AnimateCss/AnimateCss.vue?vue&type=script&lang=js&
- /* harmony default export */ var AnimateCss_AnimateCssvue_type_script_lang_js_ = (AnimateCssvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/vue-interface/src/Components/AnimateCss/AnimateCss.vue?vue&type=style&index=0&lang=scss&
-var AnimateCssvue_type_style_index_0_lang_scss_ = __webpack_require__("253b");
-
+// CONCATENATED MODULE: ./node_modules/@vue-interface/animate-css/src/AnimateCss.vue?vue&type=script&lang=js&
+ /* harmony default export */ var src_AnimateCssvue_type_script_lang_js_ = (AnimateCssvue_type_script_lang_js_); 
 // EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
 var componentNormalizer = __webpack_require__("2877");
 
-// CONCATENATED MODULE: ./node_modules/vue-interface/src/Components/AnimateCss/AnimateCss.vue
-
+// CONCATENATED MODULE: ./node_modules/@vue-interface/animate-css/src/AnimateCss.vue
 
 
 
@@ -263,7 +239,7 @@ var componentNormalizer = __webpack_require__("2877");
 /* normalize component */
 
 var component = Object(componentNormalizer["a" /* default */])(
-  AnimateCss_AnimateCssvue_type_script_lang_js_,
+  src_AnimateCssvue_type_script_lang_js_,
   render,
   staticRenderFns,
   false,
@@ -274,17 +250,9 @@ var component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var AnimateCss = (component.exports);
-// CONCATENATED MODULE: ./node_modules/vue-interface/src/Components/AnimateCss/index.js
+// CONCATENATED MODULE: ./node_modules/@vue-interface/animate-css/index.js
 
-/* harmony default export */ var Components_AnimateCss = __webpack_exports__["a"] = (AnimateCss);
-
-
-/***/ }),
-
-/***/ "714b":
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
+/* harmony default export */ var animate_css = __webpack_exports__["a"] = (AnimateCss);
 
 /***/ })
 
