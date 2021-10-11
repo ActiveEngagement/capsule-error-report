@@ -1,8 +1,12 @@
 <template>
     <router-view
+        v-if="!isExpired"
         :content="content"
         :filename="filename"
         :signed-url="signedUrl" />
+    <expired-report v-else>
+        test
+    </expired-report>
 </template>
 
 <script>
@@ -12,6 +16,7 @@ import BugsnagPluginVue from '@bugsnag/plugin-vue';
 import { AxiosDefaults } from 'capsule-common';
 import Vue from 'vue';
 import router from './router';
+import ExpiredReport from './Components/ExpiredReport';
 
 Vue.use(AxiosDefaults, {
     axios,
@@ -28,10 +33,15 @@ Bugsnag.start({
 });
 
 export default {
+    components: {
+        ExpiredReport
+    },
 
     router,
 
     props: {
+
+        expiresAt: String,
 
         filename: {
             type: String,
@@ -49,6 +59,10 @@ export default {
 
         content() {
             return this.getSlotContents();
+        },
+
+        isExpired() {
+            return new Date(this.expiresAt).getTime() > new Date().getTime();
         }
 
     },
