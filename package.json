@@ -33,7 +33,7 @@
     "@vue-interface/date-filter": "^0.8.2",
     "@vue-interface/input-field": "^0.11.2",
     "@vue-interface/slide-deck": "^0.9.8",
-    "axios": "^0.22.0",
+    "axios": "^1.6.0",
     "capsule-common": "^1.0.0-beta.1",
     "capsule-editor": "^1.0.0-beta.0",
     "capsule-lint": "^0.1.0",
